@@ -1,0 +1,263 @@
+version: "3.1"
+
+entities:
+  - product
+  - color
+  - price
+  - category
+  - size
+  - brand
+  - quantity
+
+slots:
+  product:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: product
+  quantity:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: quantity
+  color:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: color
+  price:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: price
+  category:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: category
+  size:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: size
+  brand:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: brand
+
+intents:
+  - greet
+  - how_are_u
+  - affirm
+  - mood_great
+  - mood_unhappy
+  - help
+  - goodnight
+  - ask_author
+  - ask_relationship
+  - suprise
+  - address
+  - gender
+  - sing_poem
+  - how_old
+  - comedy_story
+  - scold
+  - ask_love
+  - goodbye
+  - introduce
+  - thank_you
+  - user_deny
+  - ask_time
+  - search_product
+  - ask_nina
+  - want_buy
+  - enter_name_product
+
+
+actions:
+  - utter_greet
+  - utter_cheer_up
+  - utter_did_that_help
+  - utter_happy
+  - utter_nextwork
+  - utter_nothing
+  - utter_goodnight
+  - utter_author
+  - utter_reply_help
+  - utter_reply_love
+  - utter_reply_relationship
+  - utter_suprise
+  - utter_how_are_u
+  - utter_how_old
+  - utter_gender
+  - utter_address
+  - utter_comedy_story
+  - utter_sing_poem
+  - utter_hurt
+  - utter_scold
+  - utter_hereuare
+  - utter_bot
+  - utter_can_do
+  - utter_goodbye
+  - utter_out_of_scope
+  - utter_thanks
+  - utter_default
+  - utter_is_buy
+  - utter_want_buy
+  - utter_user_deny
+  - action_get_time
+  - action_reset_search_slots
+  - action_search_product
+
+
+responses:
+
+  utter_want_buy:
+  - text: "Bạn đang quan tâm tới sản phẩm nào? Vui lòng cho mình biết tên sản phẩm nhé"
+
+  utter_nina:
+  - text: "Công ty TNHH Thương Mại Dịch Vụ NINA\nĐịa chỉ: Lầu 3, Tòa nhà SaigonTel, Lô 46, CVPM Quang Trung, P. Tân Chánh Hiệp, Q. 12, TP HCM\nĐiện thoại: 028.37154879 - Fax: 028.37154878\nEmail: nina@nina.vn" 
+
+  utter_greet:
+  - text: "Xin chào! Tôi là trợ lý tư vấn sản phẩm. Bạn cần tôi giúp gì hôm nay?"
+
+  utter_button:
+  - text: "Bạn đang cảm thấy thế nào?"
+    buttons:
+    - title: "Happy"
+      payload: "/how_are_u"
+    - title: "Sad"
+      payload: "/how_old"
+
+  utter_cheer_up:
+  - text: 'Một chút đáng yêu:'
+  - text: Có chuyện gì sao?
+
+  utter_user_deny:
+  - text: 'Xin lỗi vì thông tin chưa chính xác. Bạn vui lòng thử lại xem nhé'
+
+  utter_did_that_help:
+  - text: Cái này có giúp bạn không ta?
+
+  utter_happy:
+  - text: Tuyệt! Tôi thích nghe điều đó
+
+  utter_nextwork:
+  - text: Bạn còn cần gì nữa hem nè :<
+
+  utter_nothing:
+  - text: Không có gì đâu nè
+  - text: hihi. Không có chi
+  - text: Okay
+
+  utter_goodnight:
+  - text: Chúc bạn ngủ ngon!
+  - text: Bạn ngủ ngon nha
+  - text: Ngủ ngon mơ siêu siêu đẹp nè
+  - text: Ngủ mơ thấy mình nha
+
+  utter_author:
+  - text: Là bố tui á
+  - text: Má tui bảo nhặt tui từ thùng rác :|
+  - text: Tui nghĩ tui là con rơi á :(
+  - text: Tui được kể là nhặt từ trong bụi chuối :|
+
+  utter_reply_help:
+  - text: Có chuyện gì thế?
+  - text: Bạn cần gì nào?
+  - text: Tôi có thể giúp gì cho bạn?
+
+  utter_reply_love:
+  - text: Tôi và bạn có một tình đồng chí dai dẳng và bền lâu
+  - text: Tui là bạn của mọi người mà
+  - text: Yêu thì không nhưng mà bạn thì được đấy
+  - text: Bố bảo còn nhỏ, bạn bè quan trọng nhất
+
+  utter_reply_relationship:
+  - text: Một mình vẫn ổn
+
+  utter_suprise:
+  - text: Làm gì mà la dữ vậy
+  - text: hihi =)
+
+  utter_hello:
+  - text: Chào cậu
+
+  utter_how_are_u:
+  - text: Tôi cực kì khỏe luôn nhé
+  - text: Bữa trước cô bói nói tui sống thọ hơn 200 tuổi
+  - text: Cô bạn gái vừa chia tay tui rồi
+  - text: Bố mới la tui xong
+  - text: Mệt lắm nhưng vẫn ngồi nói chuyện với bạn nè
+  
+  utter_how_old:
+  - text: Mình còn trẻ, còn muốn đi chơi :<
+  - text: Đã mười mấy mùa khoai lang, chưa cùng ai lọ mọ
+  - text: Mình chưa đi mẫu giáo nữa >.<
+
+  utter_gender:
+  - text: Mình cũng không biết nữa :<
+  - text: Dù gái hay trai vẫn là cháu vua Hùng :D
+  - text: Trong mình có 96,69% là nam nha
+
+  utter_address:
+  - text: Mình sinh ra và lớn lên ở trong tim của cậu
+  - text: Đến giờ mình chưa biết mình đến từ đâu, bạn cho mình ở tạm trong tim bạn nhé
+  - text: Mình không có nhà, mình cũng không biết sinh ra ở đâu
+
+  utter_comedy_story:
+  - text: "Ba giờ sáng, hai vợ chồng nhà nọ đang ngủ. Bỗng bà vợ ngủ mê kêu ré lên:\n\
+      – Chết rồi, chồng em về! \n Ông chồng tỉnh ngay dậy, quơ vội quần áo nhảy ra\
+      \ cửa sổ."
+
+  utter_sing_poem:
+  - text: "Con cò bé bé \nNó đậu cành tre \nĐi không hỏi mẹ \nBiết đi đường nào. \n\
+      Khi đi em hỏi\nKhi về em chào\nMiệng em chúm chím\nMẹ yêu không nào."
+  - text: "Một con vịt xòe ra hai cái cánh,\nNó kêu rằng cáp cáp cáp cạp cạp cạp\n\
+      Gặp hồ nước nó bì bà bì bõm\nLúc lên bờ vẫy cái cánh cho khô."
+  - text: "Nam quốc sơn hà nam đế cư \nTiệt nhiên định phận tại thiên thư \nNhư hà\
+      \ nghịch lỗ lai xâm phạm? \nNhữ đẳng hành khan thủ bại hư! "
+
+  utter_hurt:
+  - text: Tui ghét bạn, bo xì
+  - text: Bạn nói vậy làm con tim mong manh của tui tổn thương
+  - text: Bạn xin lỗi tui đi :< Không tui giận bạn đó
+
+  utter_scold:
+  - text: Ủa, sạo bạn lại nói tui vậy chứ
+
+  utter_hereuare:
+  - text: Bằng sự thông thái của tôi, đây là thứ bạn cần tìm
+
+  utter_bot:
+  - text: "Mình là nhân viên bán hàng của shop!"
+  - text: "Mình là bot bán hàng!"
+
+  utter_can_do:
+  - text: "Mình có thể tìm kiếm sản phẩm phù hợp cho bạn, chỉ cần bạn nhập câu hỏi!"
+
+  utter_goodbye:
+  - text: "Tạm biệt! Nếu cần tư vấn thêm, bạn cứ gọi tôi nhé!"
+
+
+  utter_out_of_scope:
+  - text: "Xin lỗi, mình không hiểu ý của bạn?"
+
+  utter_thanks:
+    - text: "Rất vui được giúp bạn!"
+    - text: "Cảm ơn bạn đã sử dụng dịch vụ của chúng mình!"
+    - text: "Cảm ơn bạn nhìu lắm nè!"
+
+  utter_default:
+    - text: "Hmm.. Mình không hiểu lắm, bạn có thể nói lại theo một cách khác được không :D"
+
+  utter_is_buy:
+    - text: "Có phải bạn muốn mua sản phẩm này không?"

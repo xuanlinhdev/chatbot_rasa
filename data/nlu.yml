@@ -1,0 +1,1479 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - Xin chào
+    - Chào
+    - Hi
+    - Hello
+    - Hế lô
+    - Helu
+    - Hé lu
+    - Alo
+    - À lố
+    - Chào bạn
+    - Hi pạn
+    - Bạn ơi
+    - Chào buổi sáng
+    - Chào buổi tối
+    - Chào buổi chiều
+    - Xin chào bạn
+    - Chào, tôi cần tư vấn
+    - Hi, có ai ở đó không?
+    - Chào shop, tôi muốn hỏi chút
+    - Xin chào, tôi muốn tìm hiểu sản phẩm
+    - shop có đó không
+    - shop ơi
+    - gái ơi
+    - em ơi
+    - cháu ơi
+    - tôi cần tư vấn
+    - có ai ở đó không
+
+- intent: goodbye
+  examples: |
+    - Tạm biệt nhé
+    - Cảm ơn, tôi đi đây
+    - Bye, hẹn gặp lại
+    - Chào tạm biệt
+    - Cảm ơn và bye bye
+    - Bye bye
+    - Hẹn gặp lại
+    - Lúc khác gặp lại
+    - Gặp lại sau
+    - Bai bai
+    - Bye
+    - Bai
+    - pi pi
+    - bibi
+    - pipi bạn nha
+    - tạm biệt
+
+- intent: introduce
+  examples: |
+    - Bạn là ai
+    - Bạn tên gì
+    - Tên gì vậy
+    - Ai đây
+    - Ai đang nói chuyện với tôi đây
+    - Bạn có thể làm gì
+    - Bạn có thể giúp gì cho tôi
+    - Bạn biết làm gì
+    - Bạn làm được gì
+    - Việc gì bạn làm được
+
+- intent: thank_you
+  examples: |
+    - Cảm ơn nhiều nhé
+    - Thanks bạn rất nhiều
+    - Cảm ơn vì đã tư vấn
+    - Rất cảm ơn thông tin hữu ích
+    - Thank you, bạn nhiệt tình quá
+    - Cảm ơn
+    - cảm ơn em
+    - Cảm ơn bạn
+    - Cảm ơn nhiều nha
+    - Cảm ơn rất nhiều
+    - Cảm ơn bạn nhé
+    - Thank you
+    - Thanks
+    - Thank kiu
+    - Okie
+- intent: address
+  examples: |
+    - nhà bạn ở đâu
+    - bạn ở đâu
+    - bạn ở chỗ nào
+    - bạn ở nhà nào
+    - địa chỉ nhà bạn chỗ nào
+    - địa chỉ nhà bạn ở đâu
+    - bạn sinh ra ở đâu
+    - ở đâu
+
+- intent: affirm
+  examples: |
+    - vâng
+    - được rồi
+    - tất nhiên
+    - nghe hay đó
+    - chính xác
+    - đúng rồi
+    - chính nó
+    - đúng
+    - ok
+    - okay
+
+- intent: ask_author
+  examples: |
+    - ai là người tạo ra bạn
+    - ai đẻ ra bạn
+    - bạn từ đâu ra
+    - ai tạo ra bạn
+    - ai làm ra bạn
+    - ai lập trình ra bạn
+    - bạn do ai tạo ra
+    - bạn do ai lập trình ra
+    - ai sinh ra bạn
+    - ai là người làm ra bạn
+    - ai là người lập trình ra bạn
+    - bạn sinh ra từ đâu
+
+- intent: ask_love
+  examples: |
+    - bạn có yêu tôi không
+    - tôi làm người yêu bạn được không
+    - tôi làm bạn của bạn được không
+    - tôi thích bạn được không
+    - tôi thích bạn
+    - tôi yêu bạn
+    - tôi mến bạn
+    - tôi thương bạn
+    - thương em
+    - thương anh
+    - làm người yêu tôi nha
+    - làm người yêu tôi không
+    - yêu nhau nha
+    - thương nhau không
+
+- intent: ask_relationship
+  examples: |
+    - bạn có người yêu chưa
+    - bạn có bạn không
+    - bạn có thích ai không
+    - bạn có yêu ai không
+    - có yêu ai chưa
+    - yêu ai chưa
+    - có thích ai chưa
+    - từng thích ai chưa
+    - từng yêu ai chưa
+    - yêu đương gì chưa
+    - yêu đương chưa
+    - có muốn yêu không
+
+- intent: comedy_story
+  examples: |
+    - bạn biết kể chuyện không
+    - kể chuyện cho mình nghe đi
+    - kể chuyện đi
+    - biết kể chuyện không
+    - kể chuyện đi nào
+    - kể chuyện nghe nào
+
+- intent: gender
+  examples: |
+    - bạn là nam hay nữ
+    - bạn giới tính là gì
+    - bạn thích nam hay nữ
+    - bạn là trai hay gái
+    - bạn thích trai hay gái
+    - bạn là nam hả
+    - bạn là con trai hay con gái
+    - bạn là gái hả
+    - bạn là đàn ông hay phụ nữ
+    - bạn có phải là đàn ông không
+    - bạn có phải là gay không
+    - bạn có phải là les không
+
+- intent: goodnight
+  examples: |
+    - chúc ngủ ngon
+    - chúc bạn ngủ ngon
+    - ngủ ngon nha
+    - ngủ ngon
+    - chúc em ngủ ngon
+    - chúc anh ngủ ngon
+
+- intent: help
+  examples: |
+    - cứu với
+    - giúp tôi
+    - giúp với
+    - cứu
+    - cứu vớt đời tôi
+    - cứu tôi
+    - cứu tui
+
+- intent: how_are_u
+  examples: |
+    - bạn có khỏe không
+    - dạo này bạn thế nào
+    - bạn sao rồi
+    - nay bạn thế nào
+    - hôm nay thế nào
+    - dạo này sao rồi
+    - nay sao rồi
+    - hôm nay sao rồi
+
+- intent: how_old
+  examples: |
+    - bạn mấy tuổi rồi
+    - bạn nhiêu tuổi thế
+    - bạn sinh năm bao nhiêu
+    - bạn học lớp mấy rồi
+    - bạn học cấp mấy
+    - nhiêu tuổi vậy
+    - sinh nhật mấy lần rồi
+    - bao nhiêu xuân xanh rồi
+    - bao nhiêu tuổi rồi
+
+- intent: mood_great
+  examples: |
+    - tuyệt vời
+    - rất tốt
+    - tuyệt
+    - đáng kinh ngạc
+    - hoàn hảo
+    - tôi cảm thấy rất tuyệt
+    - tôi rất khỏe
+    - tôi rất tốt
+    - khá lắm
+
+- intent: mood_unhappy
+  examples: |
+    - buồn ghê
+    - quá buồn
+    - quá chán
+    - chán quá
+    - buồn quá
+    - tệ quá
+    - quá tệ
+    - tệ
+    - rất tệ
+    - tồi tệ
+    - kinh khủng
+    - không ổn lắm
+    - cực kỳ chán
+    - cực kỳ buồn
+    - tôi buồn
+    - tôi chán
+    - huhu
+
+- intent: scold
+  examples: |
+    - khùng quá
+    - điên quá
+    - chập mạch
+    - hâm quá
+    - mất dạy
+    - vô học
+    - bạn bị ngu hả
+    - thần kinh
+    - ngáo quá
+    - điên
+    - khùng
+    - ngu
+    - hâm
+    - hâm hấp
+    - thất học
+    - ngáo đá
+    - ngáo đá ah
+    - bị điên ah
+    - bị khùng ah
+
+- intent: sing_poem
+  examples: |
+    - bạn biết hát không
+    - hát cho mình nghe đi
+    - đọc thơ đi bạn
+    - đọc thơ cho mình nghe
+    - bạn biết đọc thơ không
+    - hát đi bạn
+
+- intent: suprise
+  examples: |
+    - ôi trời
+    - trời ơi
+    - quao
+    - wow
+
+- intent: ask_time
+  examples: |
+    - bây giờ là mấy giờ
+    - mấy giờ rồi
+    - giờ hiện tại
+    - xem giờ giúp tôi
+    - cho xem giờ
+    - nói giờ xem nào
+
+- intent: user_deny
+  examples: |
+    - Không phải
+    - Không phải ạ
+    - Không
+    - Hong
+    - No
+    - Không mà
+    - Nhầm rồi
+    - Không không
+    - Nope
+    - Không phải không phải
+    - Mệt quá không phải mà
+    - Bé nhầm rồi
+    - Em nhầm rồi
+    - Quá sai
+    - Sai rồi
+    - Hong đúng òi
+    - Hong hong
+    - không á
+    - không nhé
+    - không bao giờ
+    - tôi không nghĩ vậy
+    - đừng như vậy chứ
+    - không đời nào
+    - hoàn toàn không
+
+- intent: out_of_scope
+  examples: |
+    - Hôm nay trời mưa không?
+    - Bạn có bán đồ ăn không?
+    - Tôi muốn hỏi cách nấu ăn
+    - Cái này không liên quan đến sản phẩm thôi
+    - Bạn biết chơi cờ vua không?
+
+- intent: ask_nina
+  examples: |
+    - công ty nina
+    - nina là gì
+    - nina
+    - địa chỉ công ty nina
+    - công ty nina ở đâu
+    - liên hệ công ty nina
+    - điện thoại công ty nina
+    - website công ty nina
+    - email công ty nina
+    - nina ở đâu
+    - nina quận 12
+    - nina hồ chí minh
+    - nina q12
+    - nina hcm
+    - cty nina
+    - biết công ty nina không?
+    - tnhh nina
+    - tm dv nina
+
+- intent: enter_name_product
+  examples: |
+    - [váy](product)
+    - [quần jeans](product)
+    - [áo len](product)
+    - [tivi](product)
+    - [giày lười](product)
+    - [đầm dự tiệc](product)
+    - [máy tính](product)
+    - [bàn phím](product)
+    - [bình nước](product)
+    - [điện thoại](product)
+    - [máy tính bảng](product)
+
+- intent: want_buy
+  examples: |
+    - tôi cần mua hàng
+    - tôi muốn mua hàng
+    - cần mua hàng
+    - muốn mua hàng
+    - mua hàng được không
+    - tôi muốn tìm sản phẩm
+    - có bán hàng không
+    - có hàng không
+    - có sản phẩm không
+
+- intent: search_product
+  examples: |
+    - Tìm [váy](product) [đỏ](color) [dưới 500k](price)
+    - Tìm [váy](product) màu [đỏ](color) [dưới 500k](price)
+    - Tôi muốn mua [áo thun](product) [trắng](color) [size M](size)
+    - Tôi muốn mua [áo thun](product) màu [trắng](color) [size M](size)
+    - Có [quần jeans](product) [xanh đậm](color) [rẻ](price) không?
+    - Có [quần jeans](product) màu [xanh đậm](color) [rẻ](price) không?
+    - Tìm [áo sơ mi](product) [xanh lá](color) [thời trang](category)
+    - Tìm [áo sơ mi](product) màu [xanh lá](color) [thời trang](category)
+    - Tôi cần [giày thể thao](product) [đen](color) [Adidas](brand)
+    - Tôi cần [giày thể thao](product) màu [đen](color) [Adidas](brand)
+    - Có [áo khoác](product) [nâu](color) [mùa đông](category) không?
+    - Có [áo khoác](product) màu [nâu](color) [mùa đông](category) không?
+    - Tìm [váy maxi](product) [hồng](color) [dưới 1 triệu](price)
+    - Tìm [váy maxi](product) màu [hồng](color) [dưới 1 triệu](price)
+    - Tôi muốn mua [quần short](product) [xám](color) [size 28](size)
+    - Tôi muốn mua [quần short](product) màu [xám](color) [size 28](size)
+    - Có [áo len](product) [beige](color) [cao cấp](category) không?
+    - Có [áo len](product) màu [beige](color) [cao cấp](category) không?
+    - Tìm [giày cao gót](product) [vàng](color) [size 37](size)
+    - Tìm [giày cao gót](product) màu [vàng](color) [size 37](size)
+    - Tôi cần [đầm dự tiệc](product) [đen](color) [sang trọng](category)
+    - Tôi cần [đầm dự tiệc](product) màu [đen](color) [sang trọng](category)
+    - Có [áo phông](product) [xanh dương](color) [basic](category) không?
+    - Có [áo phông](product) màu [xanh dương](color) [basic](category) không?
+    - Tìm [quần ống suông](product) [trắng](color) [dưới 400k](price)
+    - Tìm [quần ống suông](product) màu [trắng](color) [dưới 400k](price)
+    - Tôi muốn mua [sandal](product) [nâu](color) [mùa hè](category)
+    - Tôi muốn mua [sandal](product) màu [nâu](color) [mùa hè](category)
+    - Có [áo hoodie](product) [hồng phấn](color) [Uniqlo](brand) không?
+    - Có [áo hoodie](product) màu [hồng phấn](color) [Uniqlo](brand) không?
+    - Tìm [váy yếm](product) [đen](color) [giảm giá](price)
+    - Tìm [váy yếm](product) màu [đen](color) [giảm giá](price)
+    - Tôi cần [bốt](product) [xanh navy](color) [size 38](size)
+    - Tôi cần [bốt](product) màu [xanh navy](color) [size 38](size)
+    - Có [quần legging](product) [đen](color) [thể thao](category) không?
+    - Có [quần legging](product) màu [đen](color) [thể thao](category) không?
+    - Tìm [áo croptop](product) [cam](color) [rẻ](price)
+    - Tìm [áo croptop](product) màu [cam](color) [rẻ](price)
+    - Tôi muốn mua [giày lười](product) [xám](color) [Zara](brand)
+    - Tôi muốn mua [giày lười](product) màu [xám](color) [Zara](brand)
+    - Có [đầm ôm](product) [đỏ rượu](color) [sang trọng](category) không?
+    - Có [đầm ôm](product) màu [đỏ rượu](color) [sang trọng](category) không?
+    - Tìm [quần culottes](product) [beige](color) [dưới 600k](price)
+    - Tìm [quần culottes](product) màu [beige](color) [dưới 600k](price)
+    - Tôi cần [áo blazer](product) [xanh đậm](color) [công sở](category)
+    - Tôi cần [áo blazer](product) màu [xanh đậm](color) [công sở](category)
+    - Có [váy hai dây](product) [trắng](color) [mùa hè](category) không?
+    - Có [váy hai dây](product) màu [trắng](color) [mùa hè](category) không?
+    - Tìm [giày bệt](product) [hồng](color) [size 36](size)
+    - Tìm [giày bệt](product) màu [hồng](color) [size 36](size)
+    - Tôi muốn mua [áo cardigan](product) [nâu](color) [dưới 700k](price)
+    - Tôi muốn mua [áo cardigan](product) màu [nâu](color) [dưới 700k](price)
+    - Có [quần kaki](product) [xám](color) [thời trang](category) không?
+    - Có [quần kaki](product) màu [xám](color) [thời trang](category) không?
+    - Tìm [áo polo](product) [đen](color) [Lacoste](brand)
+    - Tìm [áo polo](product) màu [đen](color) [Lacoste](brand)
+    - Tôi cần [tất](product) [trắng](color) [size L](size)
+    - Tôi cần [tất](product) màu [trắng](color) [size L](size)
+    - Có [áo dạ](product) [xanh lá](color) [mùa đông](category) không?
+    - Có [áo dạ](product) màu [xanh lá](color) [mùa đông](category) không?
+    - Tìm [quần ống loe](product) [đen](color) [dưới 800k](price)
+    - Tìm [quần ống loe](product) màu [đen](color) [dưới 800k](price)
+    - Tôi muốn mua [giày đế xuồng](product) [beige](color) [size 39](size)
+    - Tôi muốn mua [giày đế xuồng](product) màu [beige](color) [size 39](size)
+    - Có [áo mưa](product) [xanh dương](color) [rẻ](price) không?
+    - Có [áo mưa](product) màu [xanh dương](color) [rẻ](price) không?
+    - Tìm [đầm xòe](product) [hồng](color) [dự tiệc](category)
+    - Tìm [đầm xòe](product) màu [hồng](color) [dự tiệc](category)
+    - Tôi cần [quần lót](product) [đen](color) [size M](size)
+    - Tôi cần [quần lót](product) màu [đen](color) [size M](size)
+    - Có [áo bra](product) [trắng](color) [thể thao](category) không?
+    - Có [áo bra](product) màu [trắng](color) [thể thao](category) không?
+    - Tìm [giày oxford](product) [nâu](color) [dưới 1 triệu](price)
+    - Tìm [giày oxford](product) màu [nâu](color) [dưới 1 triệu](price)
+    - Tôi muốn mua [váy babydoll](product) [xanh](color) [rẻ](price)
+    - Tôi muốn mua [váy babydoll](product) màu [xanh](color) [rẻ](price)
+    - Có [áo dài](product) [vàng](color) [truyền thống](category) không?
+    - Có [áo dài](product) màu [vàng](color) [truyền thống](category) không?
+    - Tìm [quần jogger](product) [xám](color) [H&M](brand)
+    - Tìm [quần jogger](product) màu [xám](color) [H&M](brand)
+    - Tôi cần [áo thun dài tay](product) [đen](color) [dưới 300k](price)
+    - Tôi cần [áo thun dài tay](product) màu [đen](color) [dưới 300k](price)
+    - Có [giày slip-on](product) [trắng](color) [thời trang](category) không?
+    - Có [giày slip-on](product) màu [trắng](color) [thời trang](category) không?
+    - Tìm [đầm suông](product) [beige](color) [giảm giá](price)
+    - Tìm [đầm suông](product) màu [beige](color) [giảm giá](price)
+    - Tôi muốn mua [áo tanktop](product) [xanh lá](color) [size S](size)
+    - Tôi muốn mua [áo tanktop](product) màu [xanh lá](color) [size S](size)
+    - Có [quần palazzo](product) [đỏ](color) [sang trọng](category) không?
+    - Có [quần palazzo](product) màu [đỏ](color) [sang trọng](category) không?
+    - Tìm [áo khoác phao](product) [hồng](color) [mùa đông](category)
+    - Tìm [áo khoác phao](product) màu [hồng](color) [mùa đông](category)
+    - Tôi cần [dép xỏ ngón](product) [đen](color) [rẻ](price)
+    - Tôi cần [dép xỏ ngón](product) màu [đen](color) [rẻ](price)
+    - Có [áo vest](product) [xám](color) [công sở](category) không?
+    - Có [áo vest](product) màu [xám](color) [công sở](category) không?
+    - Tìm [quần ống rộng](product) [trắng](color) [dưới 600k](price)
+    - Tìm [quần ống rộng](product) màu [trắng](color) [dưới 600k](price)
+    - Tìm [túi xách](product) [đen](color) [dưới 1 triệu](price)
+    - Tìm [túi xách](product) màu [đen](color) [dưới 1 triệu](price)
+    - Tôi muốn mua [đồng hồ](product) [bạc](color) [Casio](brand)
+    - Tôi muốn mua [đồng hồ](product) màu [bạc](color) [Casio](brand)
+    - Có [kính râm](product) [nâu](color) [thời trang](category) không?
+    - Có [kính râm](product) màu [nâu](color) [thời trang](category) không?
+    - Tìm [khăn choàng](product) [xanh](color) [lụa](category)
+    - Tìm [khăn choàng](product) màu [xanh](color) [lụa](category)
+    - Tôi cần [nhẫn](product) [vàng](color) [giảm giá](price)
+    - Tôi cần [nhẫn](product) màu [vàng](color) [giảm giá](price)
+    - Có [túi đeo chéo](product) [trắng](color) [rẻ](price) không?
+    - Có [túi đeo chéo](product) màu [trắng](color) [rẻ](price) không?
+    - Tìm [mũ lưỡi trai](product) [đen](color) [Nike](brand)
+    - Tìm [mũ lưỡi trai](product) màu [đen](color) [Nike](brand)
+    - Tôi muốn mua [bông tai](product) [bạc](color) [cao cấp](category)
+    - Tôi muốn mua [bông tai](product) màu [bạc](color) [cao cấp](category)
+    - Có [dây chuyền](product) [vàng hồng](color) [dưới 2 triệu](price) không?
+    - Có [dây chuyền](product) màu [vàng hồng](color) [dưới 2 triệu](price) không?
+    - Tìm [ba lô](product) [xám](color) [thể thao](category)
+    - Tìm [ba lô](product) màu [xám](color) [thể thao](category)
+    - Tôi cần [thắt lưng](product) [nâu](color) [da thật](category)
+    - Tôi cần [thắt lưng](product) màu [nâu](color) [da thật](category)
+    - Có [mũ bucket](product) [hồng](color) [rẻ](price) không?
+    - Có [mũ bucket](product) màu [hồng](color) [rẻ](price) không?
+    - Tìm [kính cận](product) [đen](color) [Ray-Ban](brand)
+    - Tìm [kính cận](product) màu [đen](color) [Ray-Ban](brand)
+    - Tôi muốn mua [túi tote](product) [beige](color) [thời trang](category)
+    - Tôi muốn mua [túi tote](product) màu [beige](color) [thời trang](category)
+    - Có [vòng tay](product) [bạc](color) [giảm giá](price) không?
+    - Có [vòng tay](product) màu [bạc](color) [giảm giá](price) không?
+    - Tìm [dép lê](product) [trắng](color) [dưới 200k](price)
+    - Tìm [dép lê](product) màu [trắng](color) [dưới 200k](price)
+    - Tôi cần [cài áo](product) [vàng](color) [sang trọng](category)
+    - Tôi cần [cài áo](product) màu [vàng](color) [sang trọng](category)
+    - Có [mũ len](product) [xanh dương](color) [mùa đông](category) không?
+    - Có [mũ len](product) màu [xanh dương](color) [mùa đông](category) không?
+    - Tìm [túi clutch](product) [đỏ](color) [dưới 700k](price)
+    - Tìm [túi clutch](product) màu [đỏ](color) [dưới 700k](price)
+    - Tôi muốn mua [hài](product) [đen](color) [size 39](size)
+    - Tôi muốn mua [hài](product) màu [đen](color) [size 39](size)
+    - Có [khăn quàng cổ](product) [hồng phấn](color) [lụa](category) không?
+    - Có [khăn quàng cổ](product) màu [hồng phấn](color) [lụa](category) không?
+    - Tìm [mũ phớt](product) [nâu](color) [thời trang](category)
+    - Tìm [mũ phớt](product) màu [nâu](color) [thời trang](category)
+    - Tôi cần [vòng cổ](product) [vàng](color) [Pandora](brand)
+    - Tôi cần [vòng cổ](product) màu [vàng](color) [Pandora](brand)
+    - Có [túi mini](product) [xanh lá](color) [rẻ](price) không?
+    - Có [túi mini](product) màu [xanh lá](color) [rẻ](price) không?
+    - Tìm [găng tay](product) [đen](color) [mùa đông](category)
+    - Tìm [găng tay](product) màu [đen](color) [mùa đông](category)
+    - Tôi muốn mua [mũ nồi](product) [xám](color) [dưới 300k](price)
+    - Tôi muốn mua [mũ nồi](product) màu [xám](color) [dưới 300k](price)
+    - Có [túi đựng điện thoại](product) [hồng](color) [rẻ](price) không?
+    - Có [túi đựng điện thoại](product) màu [hồng](color) [rẻ](price) không?
+    - Tìm [kẹp tóc](product) [trắng](color) [thời trang](category)
+    - Tìm [kẹp tóc](product) màu [trắng](color) [thời trang](category)
+    - Tôi cần [dây đeo đồng hồ](product) [nâu](color) [da](category)
+    - Tôi cần [dây đeo đồng hồ](product) màu [nâu](color) [da](category)
+    - Có [mũ bảo hiểm](product) [đen](color) [rẻ](price) không?
+    - Có [mũ bảo hiểm](product) màu [đen](color) [rẻ](price) không?
+    - Tìm [túi du lịch](product) [xanh navy](color) [dưới 1 triệu](price)
+    - Tìm [túi du lịch](product) màu [xanh navy](color) [dưới 1 triệu](price)
+    - Tôi muốn mua [vòng chân](product) [bạc](color) [giảm giá](price)
+    - Tôi muốn mua [vòng chân](product) màu [bạc](color) [giảm giá](price)
+    - Có [khăn tay](product) [trắng](color) [cotton](category) không?
+    - Có [khăn tay](product) màu [trắng](color) [cotton](category) không?
+    - Tìm [mũ snapback](product) [đỏ](color) [Supreme](brand)
+    - Tìm [mũ snapback](product) màu [đỏ](color) [Supreme](brand)
+    - Tôi cần [túi đựng mỹ phẩm](product) [hồng](color) [rẻ](price)
+    - Tôi cần [túi đựng mỹ phẩm](product) màu [hồng](color) [rẻ](price)
+    - Có [dây lưng](product) [đen](color) [thể thao](category) không?
+    - Có [dây lưng](product) màu [đen](color) [thể thao](category) không?
+    - Tìm [mũ rộng vành](product) [beige](color) [mùa hè](category)
+    - Tìm [mũ rộng vành](product) màu [beige](color) [mùa hè](category)
+    - Tôi muốn mua [kính bơi](product) [xanh](color) [dưới 400k](price)
+    - Tôi muốn mua [kính bơi](product) màu [xanh](color) [dưới 400k](price)
+    - Có [túi đựng laptop](product) [xám](color) [thời trang](category) không?
+    - Có [túi đựng laptop](product) màu [xám](color) [thời trang](category) không?
+    - Tìm [trâm cài tóc](product) [vàng](color) [sang trọng](category)
+    - Tìm [trâm cài tóc](product) màu [vàng](color) [sang trọng](category)
+    - Tôi cần [mũ tai bèo](product) [nâu](color) [rẻ](price)
+    - Tôi cần [mũ tai bèo](product) màu [nâu](color) [rẻ](price)
+    - Có [vòng đeo tay](product) [đỏ](color) [giảm giá](price) không?
+    - Có [vòng đeo tay](product) màu [đỏ](color) [giảm giá](price) không?
+    - Tìm [túi vải](product) [trắng](color) [thân thiện môi trường](category)
+    - Tìm [túi vải](product) màu [trắng](color) [thân thiện môi trường](category)
+    - Tôi muốn mua [khăn turban](product) [xanh lá](color) [thời trang](category)
+    - Tôi muốn mua [khăn turban](product) màu [xanh lá](color) [thời trang](category)
+    - Có [mũ bóng chày](product) [đen](color) [Adidas](brand) không?
+    - Có [mũ bóng chày](product) màu [đen](color) [Adidas](brand) không?
+    - Tìm [dây buộc tóc](product) [hồng](color) [rẻ](price)
+    - Tìm [dây buộc tóc](product) màu [hồng](color) [rẻ](price)
+    - Tôi cần [túi đựng giày](product) [xám](color) [dưới 200k](price)
+    - Tôi cần [túi đựng giày](product) màu [xám](color) [dưới 200k](price)
+    - Có [mũ visor](product) [trắng](color) [thể thao](category) không?
+    - Có [mũ visor](product) màu [trắng](color) [thể thao](category) không?
+    - Tìm [lắc tay](product) [bạc](color) [cao cấp](category)
+    - Tìm [lắc tay](product) màu [bạc](color) [cao cấp](category)
+    - Tìm [son môi](product) [đỏ](color) [Mac](brand)
+    - Tìm [son môi](product) màu [đỏ](color) [Mac](brand)
+    - Tôi muốn mua [kem dưỡng](product) [trắng](color) [dưới 500k](price)
+    - Tôi muốn mua [kem dưỡng](product) màu [trắng](color) [dưới 500k](price)
+    - Có [phấn nền](product) [beige](color) [cao cấp](category) không?
+    - Có [phấn nền](product) màu [beige](color) [cao cấp](category) không?
+    - Tìm [mascara](product) [đen](color) [Maybelline](brand)
+    - Tìm [mascara](product) màu [đen](color) [Maybelline](brand)
+    - Tôi cần [nước hoa](product) [hồng](color) [sang trọng](category)
+    - Tôi cần [nước hoa](product) màu [hồng](color) [sang trọng](category)
+    - Có [kem chống nắng](product) [trắng](color) [rẻ](price) không?
+    - Có [kem chống nắng](product) màu [trắng](color) [rẻ](price) không?
+    - Tìm [sữa rửa mặt](product) [xanh](color) [dành cho da dầu](category)
+    - Tìm [sữa rửa mặt](product) màu [xanh](color) [dành cho da dầu](category)
+    - Tôi muốn mua [phấn mắt](product) [nâu](color) [dưới 300k](price)
+    - Tôi muốn mua [phấn mắt](product) màu [nâu](color) [dưới 300k](price)
+    - Có [tẩy trang](product) [xanh dương](color) [Bioderma](brand) không?
+    - Có [tẩy trang](product) màu [xanh dương](color) [Bioderma](brand) không?
+    - Tìm [son dưỡng](product) [hồng](color) [rẻ](price)
+    - Tìm [son dưỡng](product) màu [hồng](color) [rẻ](price)
+    - Tôi cần [mặt nạ](product) [trắng](color) [dưỡng da](category)
+    - Tôi cần [mặt nạ](product) màu [trắng](color) [dưỡng da](category)
+    - Có [chì kẻ mày](product) [đen](color) [dưới 200k](price) không?
+    - Có [chì kẻ mày](product) màu [đen](color) [dưới 200k](price) không?
+    - Tìm [kem che khuyết điểm](product) [beige](color) [L’Oreal](brand)
+    - Tìm [kem che khuyết điểm](product) màu [beige](color) [L’Oreal](brand)
+    - Tôi muốn mua [nước tẩy móng](product) [xanh lá](color) [rẻ](price)
+    - Tôi muốn mua [nước tẩy móng](product) màu [xanh lá](color) [rẻ](price)
+    - Có [phấn má](product) [hồng phấn](color) [cao cấp](category) không?
+    - Có [phấn má](product) màu [hồng phấn](color) [cao cấp](category) không?
+    - Tìm [serum](product) [trắng](color) [dưới 1 triệu](price)
+    - Tìm [serum](product) màu [trắng](color) [dưới 1 triệu](price)
+    - Tôi cần [dầu gội](product) [xanh](color) [dành cho tóc khô](category)
+    - Tôi cần [dầu gội](product) màu [xanh](color) [dành cho tóc khô](category)
+    - Có [sữa tắm](product) [hồng](color) [Dove](brand) không?
+    - Có [sữa tắm](product) màu [hồng](color) [Dove](brand) không?
+    - Tìm [kem mắt](product) [trắng](color) [giảm giá](price)
+    - Tìm [kem mắt](product) màu [trắng](color) [giảm giá](price)
+    - Tôi muốn mua [xịt khoáng](product) [xanh dương](color) [rẻ](price)
+    - Tôi muốn mua [xịt khoáng](product) màu [xanh dương](color) [rẻ](price)
+    - Có [son bóng](product) [hồng](color) [dưới 400k](price) không?
+    - Có [son bóng](product) màu [hồng](color) [dưới 400k](price) không?
+    - Tìm [kem lót](product) [beige](color) [thời trang](category)
+    - Tìm [kem lót](product) màu [beige](color) [thời trang](category)
+    - Tôi cần [dầu dưỡng tóc](product) [vàng](color) [Moroccanoil](brand)
+    - Tôi cần [dầu dưỡng tóc](product) màu [vàng](color) [Moroccanoil](brand)
+    - Có [phấn phủ](product) [trắng](color) [rẻ](price) không?
+    - Có [phấn phủ](product) màu [trắng](color) [rẻ](price) không?
+    - Tìm [mặt nạ giấy](product) [xanh](color) [dưỡng ẩm](category)
+    - Tìm [mặt nạ giấy](product) màu [xanh](color) [dưỡng ẩm](category)
+    - Tôi muốn mua [nước hoa hồng](product) [trắng](color) [dưới 300k](price)
+    - Tôi muốn mua [nước hoa hồng](product) màu [trắng](color) [dưới 300k](price)
+    - Có [kem tẩy lông](product) [xanh lá](color) [Veet](brand) không?
+    - Có [kem tẩy lông](product) màu [xanh lá](color) [Veet](brand) không?
+    - Tìm [son kem](product) [đỏ rượu](color) [cao cấp](category)
+    - Tìm [son kem](product) màu [đỏ rượu](color) [cao cấp](category)
+    - Tôi cần [gel rửa mặt](product) [xanh dương](color) [dành cho da mụn](category)
+    - Tôi cần [gel rửa mặt](product) màu [xanh dương](color) [dành cho da mụn](category)
+    - Có [dầu tắm](product) [hồng](color) [rẻ](price) không?
+    - Có [dầu tắm](product) màu [hồng](color) [rẻ](price) không?
+    - Tìm [kem nền](product) [beige](color) [Estee Lauder](brand)
+    - Tìm [kem nền](product) màu [beige](color) [Estee Lauder](brand)
+    - Tôi muốn mua [chống nắng dạng xịt](product) [trắng](color) [dưới 600k](price)
+    - Tôi muốn mua [chống nắng dạng xịt](product) màu [trắng](color) [dưới 600k](price)
+    - Có [son tint](product) [cam](color) [thời trang](category) không?
+    - Có [son tint](product) màu [cam](color) [thời trang](category) không?
+    - Tìm [dầu xả](product) [xanh](color) [TRESemmé](brand)
+    - Tìm [dầu xả](product) màu [xanh](color) [TRESemmé](brand)
+    - Tôi cần [mặt nạ đất sét](product) [xám](color) [dành cho da dầu](category)
+    - Tôi cần [mặt nạ đất sét](product) màu [xám](color) [dành cho da dầu](category)
+    - Có [kem tay](product) [hồng](color) [dưới 200k](price) không?
+    - Có [kem tay](product) màu [hồng](color) [dưới 200k](price) không?
+    - Tìm [phấn nước](product) [beige](color) [Laneige](brand)
+    - Tìm [phấn nước](product) màu [beige](color) [Laneige](brand)
+    - Tôi muốn mua [sữa dưỡng thể](product) [trắng](color) [rẻ](price)
+    - Tôi muốn mua [sữa dưỡng thể](product) màu [trắng](color) [rẻ](price)
+    - Có [gel dưỡng](product) [xanh lá](color) [dưỡng ẩm](category) không?
+    - Có [gel dưỡng](product) màu [xanh lá](color) [dưỡng ẩm](category) không?
+    - Tìm [kem BB](product) [beige](color) [dưới 500k](price)
+    - Tìm [kem BB](product) màu [beige](color) [dưới 500k](price)
+    - Tôi cần [dầu gội khô](product) [xanh](color) [Batiste](brand)
+    - Tôi cần [dầu gội khô](product) màu [xanh](color) [Batiste](brand)
+    - Có [son lì](product) [đỏ](color) [cao cấp](category) không?
+    - Có [son lì](product) màu [đỏ](color) [cao cấp](category) không?
+    - Tìm [nước hoa nam](product) [đen](color) [dưới 2 triệu](price)
+    - Tìm [nước hoa nam](product) màu [đen](color) [dưới 2 triệu](price)
+    - Tôi muốn mua [kem trị mụn](product) [trắng](color) [rẻ](price)
+    - Tôi muốn mua [kem trị mụn](product) màu [trắng](color) [rẻ](price)
+    - Có [gel lô hội](product) [xanh](color) [dưỡng da](category) không?
+    - Có [gel lô hội](product) màu [xanh](color) [dưỡng da](category) không?
+    - Tìm [phấn rôm](product) [trắng](color) [dưới 100k](price)
+    - Tìm [phấn rôm](product) màu [trắng](color) [dưới 100k](price)
+    - Tôi cần [sáp vuốt tóc](product) [đen](color) [Gatsby](brand)
+    - Tôi cần [sáp vuốt tóc](product) màu [đen](color) [Gatsby](brand)
+    - Có [mặt nạ ngủ](product) [hồng](color) [giảm giá](price) không?
+    - Có [mặt nạ ngủ](product) màu [hồng](color) [giảm giá](price) không?
+    - Tìm [tai nghe](product) [đen](color) [Sony](brand)
+    - Tìm [tai nghe](product) màu [đen](color) [Sony](brand)
+    - Tôi muốn mua [điện thoại](product) [trắng](color) [dưới 5 triệu](price)
+    - Tôi muốn mua [điện thoại](product) màu [trắng](color) [dưới 5 triệu](price)
+    - Có [loa Bluetooth](product) [xanh](color) [rẻ](price) không?
+    - Có [loa Bluetooth](product) màu [xanh](color) [rẻ](price) không?
+    - Tìm [laptop](product) [bạc](color) [Dell](brand)
+    - Tìm [laptop](product) màu [bạc](color) [Dell](brand)
+    - Tôi cần [máy ảnh](product) [đen](color) [cao cấp](category)
+    - Tôi cần [máy ảnh](product) màu [đen](color) [cao cấp](category)
+    - Có [sạc dự phòng](product) [trắng](color) [dưới 500k](price) không?
+    - Có [sạc dự phòng](product) màu [trắng](color) [dưới 500k](price) không?
+    - Tìm [đồng hồ thông minh](product) [xám](color) [Apple](brand)
+    - Tìm [đồng hồ thông minh](product) màu [xám](color) [Apple](brand)
+    - Tôi muốn mua [máy nghe nhạc](product) [đỏ](color) [rẻ](price)
+    - Tôi muốn mua [máy nghe nhạc](product) màu [đỏ](color) [rẻ](price)
+    - Có [tivi](product) [đen](color) [Samsung](brand) không?
+    - Có [tivi](product) màu [đen](color) [Samsung](brand) không?
+    - Tìm [chuột máy tính](product) [xanh dương](color) [dưới 300k](price)
+    - Tìm [chuột máy tính](product) màu [xanh dương](color) [dưới 300k](price)
+    - Tôi cần [bàn phím](product) [trắng](color) [gaming](category)
+    - Tôi cần [bàn phím](product) màu [trắng](color) [gaming](category)
+    - Có [máy in](product) [xám](color) [HP](brand) không?
+    - Có [máy in](product) màu [xám](color) [HP](brand) không?
+    - Tìm [ổ cứng ngoài](product) [đen](color) [dưới 2 triệu](price)
+    - Tìm [ổ cứng ngoài](product) màu [đen](color) [dưới 2 triệu](price)
+    - Tôi muốn mua [máy chơi game](product) [trắng](color) [Sony](brand)
+    - Tôi muốn mua [máy chơi game](product) màu [trắng](color) [Sony](brand)
+    - Có [micro](product) [bạc](color) [thu âm](category) không?
+    - Có [micro](product) màu [bạc](color) [thu âm](category) không?
+    - Tìm [tai nghe không dây](product) [hồng](color) [giảm giá](price)
+    - Tìm [tai nghe không dây](product) màu [hồng](color) [giảm giá](price)
+    - Tôi cần [đầu đọc thẻ](product) [xanh](color) [rẻ](price)
+    - Tôi cần [đầu đọc thẻ](product) màu [xanh](color) [rẻ](price)
+    - Có [camera](product) [đen](color) [an ninh](category) không?
+    - Có [camera](product) màu [đen](color) [an ninh](category) không?
+    - Tìm [máy tính bảng](product) [bạc](color) [dưới 7 triệu](price)
+    - Tìm [máy tính bảng](product) màu [bạc](color) [dưới 7 triệu](price)
+    - Tôi muốn mua [đèn LED](product) [trắng](color) [Xiaomi](brand)
+    - Tôi muốn mua [đèn LED](product) màu [trắng](color) [Xiaomi](brand)
+    - Có [máy lọc không khí](product) [xám](color) [cao cấp](category) không?
+    - Có [máy lọc không khí](product) màu [xám](color) [cao cấp](category) không?
+    - Tìm [pin sạc](product) [đen](color) [dưới 400k](price)
+    - Tìm [pin sạc](product) màu [đen](color) [dưới 400k](price)
+    - Tôi cần [router wifi](product) [trắng](color) [TP-Link](brand)
+    - Tôi cần [router wifi](product) màu [trắng](color) [TP-Link](brand)
+    - Có [máy chiếu](product) [bạc](color) [giảm giá](price) không?
+    - Có [máy chiếu](product) màu [bạc](color) [giảm giá](price) không?
+    - Tìm [loa vi tính](product) [đen](color) [rẻ](price)
+    - Tìm [loa vi tính](product) màu [đen](color) [rẻ](price)
+    - Tôi muốn mua [máy quay phim](product) [xám](color) [Canon](brand)
+    - Tôi muốn mua [máy quay phim](product) màu [xám](color) [Canon](brand)
+    - Có [đồng hồ báo thức](product) [trắng](color) [dưới 200k](price) không?
+    - Có [đồng hồ báo thức](product) màu [trắng](color) [dưới 200k](price) không?
+    - Tìm [máy tính để bàn](product) [đen](color) [HP](brand)
+    - Tìm [máy tính để bàn](product) màu [đen](color) [HP](brand)
+    - Tôi cần [đèn bàn](product) [hồng](color) [học tập](category)
+    - Tôi cần [đèn bàn](product) màu [hồng](color) [học tập](category)
+    - Có [ổ cắm điện](product) [trắng](color) [rẻ](price) không?
+    - Có [ổ cắm điện](product) màu [trắng](color) [rẻ](price) không?
+    - Tìm [máy scan](product) [xám](color) [dưới 3 triệu](price)
+    - Tìm [máy scan](product) màu [xám](color) [dưới 3 triệu](price)
+    - Tôi muốn mua [tai nghe gaming](product) [đen](color) [Logitech](brand)
+    - Tôi muốn mua [tai nghe gaming](product) màu [đen](color) [Logitech](brand)
+    - Có [máy đo huyết áp](product) [trắng](color) [Omron](brand) không?
+    - Có [máy đo huyết áp](product) màu [trắng](color) [Omron](brand) không?
+    - Tìm [đèn ngủ thông minh](product) [hồng](color) [giảm giá](price)
+    - Tìm [đèn ngủ thông minh](product) màu [hồng](color) [giảm giá](price)
+    - Tôi cần [máy tạo ẩm](product) [xanh](color) [dưới 1 triệu](price)
+    - Tôi cần [máy tạo ẩm](product) màu [xanh](color) [dưới 1 triệu](price)
+    - Có [máy massage](product) [đen](color) [cao cấp](category) không?
+    - Có [máy massage](product) màu [đen](color) [cao cấp](category) không?
+    - Tìm [đầu phát wifi](product) [trắng](color) [rẻ](price)
+    - Tìm [đầu phát wifi](product) màu [trắng](color) [rẻ](price)
+    - Tôi muốn mua [máy cạo râu](product) [bạc](color) [Philips](brand)
+    - Tôi muốn mua [máy cạo râu](product) màu [bạc](color) [Philips](brand)
+    - Có [máy đo nhiệt độ](product) [xanh dương](color) [dưới 500k](price) không?
+    - Có [máy đo nhiệt độ](product) màu [xanh dương](color) [dưới 500k](price) không?
+    - Tìm [đèn pin](product) [đen](color) [rẻ](price)
+    - Tìm [đèn pin](product) màu [đen](color) [rẻ](price)
+    - Tôi cần [máy hút chân không](product) [trắng](color) [gia đình](category)
+    - Tôi cần [máy hút chân không](product) màu [trắng](color) [gia đình](category)
+    - Có [máy nghe radio](product) [nâu](color) [giảm giá](price) không?
+    - Có [máy nghe radio](product) màu [nâu](color) [giảm giá](price) không?
+    - Tìm [ổ khóa điện tử](product) [bạc](color) [Xiaomi](brand)
+    - Tìm [ổ khóa điện tử](product) màu [bạc](color) [Xiaomi](brand)
+    - Tôi muốn mua [máy ép nhiệt](product) [đen](color) [dưới 2 triệu](price)
+    - Tôi muốn mua [máy ép nhiệt](product) màu [đen](color) [dưới 2 triệu](price)
+    - Có [máy phát điện](product) [xám](color) [cao cấp](category) không?
+    - Có [máy phát điện](product) màu [xám](color) [cao cấp](category) không?
+    - Tìm [đồng hồ treo tường](product) [trắng](color) [rẻ](price)
+    - Tìm [đồng hồ treo tường](product) màu [trắng](color) [rẻ](price)
+    - Tôi cần [máy khuếch tán tinh dầu](product) [hồng](color) [dưới 700k](price)
+    - Tôi cần [máy khuếch tán tinh dầu](product) màu [hồng](color) [dưới 700k](price)
+    - Có [máy cắt tỉa lông](product) [đen](color) [Philips](brand) không?
+    - Có [máy cắt tỉa lông](product) màu [đen](color) [Philips](brand) không?
+    - Tìm [nồi chiên không dầu](product) [trắng](color) [dưới 3 triệu](price)
+    - Tìm [nồi chiên không dầu](product) màu [trắng](color) [dưới 3 triệu](price)
+    - Tôi muốn mua [máy xay sinh tố](product) [xanh](color) [Philips](brand)
+    - Tôi muốn mua [máy xay sinh tố](product) màu [xanh](color) [Philips](brand)
+    - Có [bàn ủi](product) [xám](color) [rẻ](price) không?
+    - Có [bàn ủi](product) màu [xám](color) [rẻ](price) không?
+    - Tìm [lò vi sóng](product) [đen](color) [Samsung](brand)
+    - Tìm [lò vi sóng](product) màu [đen](color) [Samsung](brand)
+    - Tôi cần [máy hút bụi](product) [đỏ](color) [nhỏ gọn](category)
+    - Tôi cần [máy hút bụi](product) màu [đỏ](color) [nhỏ gọn](category)
+    - Có [nồi cơm điện](product) [trắng](color) [dưới 1 triệu](price) không?
+    - Có [nồi cơm điện](product) màu [trắng](color) [dưới 1 triệu](price) không?
+    - Tìm [bình đun nước](product) [bạc](color) [Panasonic](brand)
+    - Tìm [bình đun nước](product) màu [bạc](color) [Panasonic](brand)
+    - Tôi muốn mua [chảo chống dính](product) [đen](color) [rẻ](price)
+    - Tôi muốn mua [chảo chống dính](product) màu [đen](color) [rẻ](price)
+    - Có [máy ép chậm](product) [xanh dương](color) [cao cấp](category) không?
+    - Có [máy ép chậm](product) màu [xanh dương](color) [cao cấp](category) không?
+    - Tìm [quạt điện](product) [trắng](color) [dưới 500k](price)
+    - Tìm [quạt điện](product) màu [trắng](color) [dưới 500k](price)
+    - Tôi cần [bếp từ](product) [đen](color) [Sunhouse](brand)
+    - Tôi cần [bếp từ](product) màu [đen](color) [Sunhouse](brand)
+    - Có [lò nướng](product) [bạc](color) [giảm giá](price) không?
+    - Có [lò nướng](product) màu [bạc](color) [giảm giá](price) không?
+    - Tìm [máy giặt](product) [xám](color) [LG](brand)
+    - Tìm [máy giặt](product) màu [xám](color) [LG](brand)
+    - Tôi muốn mua [tủ lạnh](product) [trắng](color) [dưới 10 triệu](price)
+    - Tôi muốn mua [tủ lạnh](product) màu [trắng](color) [dưới 10 triệu](price)
+    - Có [bình giữ nhiệt](product) [hồng](color) [rẻ](price) không?
+    - Có [bình giữ nhiệt](product) màu [hồng](color) [rẻ](price) không?
+    - Tìm [máy pha cà phê](product) [đen](color) [cao cấp](category)
+    - Tìm [máy pha cà phê](product) màu [đen](color) [cao cấp](category)
+    - Tôi cần [chổi lau nhà](product) [xanh](color) [360 độ](category)
+    - Tôi cần [chổi lau nhà](product) màu [xanh](color) [360 độ](category)
+    - Có [nồi áp suất](product) [bạc](color) [dưới 2 triệu](price) không?
+    - Có [nồi áp suất](product) màu [bạc](color) [dưới 2 triệu](price) không?
+    - Tìm [đèn ngủ](product) [trắng](color) [Xiaomi](brand)
+    - Tìm [đèn ngủ](product) màu [trắng](color) [Xiaomi](brand)
+    - Tôi muốn mua [máy sấy tóc](product) [hồng](color) [rẻ](price)
+    - Tôi muốn mua [máy sấy tóc](product) màu [hồng](color) [rẻ](price)
+    - Có [bộ nồi inox](product) [bạc](color) [Kangaroo](brand) không?
+    - Có [bộ nồi inox](product) màu [bạc](color) [Kangaroo](brand) không?
+    - Tìm [máy lọc nước](product) [trắng](color) [dưới 5 triệu](price)
+    - Tìm [máy lọc nước](product) màu [trắng](color) [dưới 5 triệu](price)
+    - Tôi cần [bình nước](product) [xanh lá](color) [dung tích 1L](category)
+    - Tôi cần [bình nước](product) màu [xanh lá](color) [dung tích 1L](category)
+    - Có [thảm trải sàn](product) [nâu](color) [rẻ](price) không?
+    - Có [thảm trải sàn](product) màu [nâu](color) [rẻ](price) không?
+    - Tìm [máy đánh trứng](product) [trắng](color) [giảm giá](price)
+    - Tìm [máy đánh trứng](product) màu [trắng](color) [giảm giá](price)
+    - Tôi muốn mua [bếp điện](product) [đen](color) [dưới 1 triệu](price)
+    - Tôi muốn mua [bếp điện](product) màu [đen](color) [dưới 1 triệu](price)
+    - Có [máy làm sữa chua](product) [hồng](color) [rẻ](price) không?
+    - Có [máy làm sữa chua](product) màu [hồng](color) [rẻ](price) không?
+    - Tìm [nồi lẩu điện](product) [trắng](color) [Lock&Lock](brand)
+    - Tìm [nồi lẩu điện](product) màu [trắng](color) [Lock&Lock](brand)
+    - Tôi cần [máy làm bánh mì](product) [bạc](color) [cao cấp](category)
+    - Tôi cần [máy làm bánh mì](product) màu [bạc](color) [cao cấp](category)
+    - Có [bình thủy tinh](product) [xanh](color) [dưới 200k](price) không?
+    - Có [bình thủy tinh](product) màu [xanh](color) [dưới 200k](price) không?
+    - Tìm [máy nướng bánh](product) [đen](color) [rẻ](price)
+    - Tìm [máy nướng bánh](product) màu [đen](color) [rẻ](price)
+    - Tôi muốn mua [đèn sưởi](product) [trắng](color) [dưới 700k](price)
+    - Tôi muốn mua [đèn sưởi](product) màu [trắng](color) [dưới 700k](price)
+    - Có [chổi quét nhà](product) [xanh dương](color) [nhỏ gọn](category) không?
+    - Có [chổi quét nhà](product) màu [xanh dương](color) [nhỏ gọn](category) không?
+    - Tìm [máy làm kem](product) [hồng](color) [giảm giá](price)
+    - Tìm [máy làm kem](product) màu [hồng](color) [giảm giá](price)
+    - Tôi cần [bộ dao](product) [bạc](color) [Lock&Lock](brand)
+    - Tôi cần [bộ dao](product) màu [bạc](color) [Lock&Lock](brand)
+    - Có [thùng rác](product) [xám](color) [dưới 300k](price) không?
+    - Có [thùng rác](product) màu [xám](color) [dưới 300k](price) không?
+    - Tìm [máy xay thịt](product) [trắng](color) [rẻ](price)
+    - Tìm [máy xay thịt](product) màu [trắng](color) [rẻ](price)
+    - Tôi muốn mua [bếp nướng điện](product) [đen](color) [dưới 2 triệu](price)
+    - Tôi muốn mua [bếp nướng điện](product) màu [đen](color) [dưới 2 triệu](price)
+    - Có [máy làm tỏi đen](product) [bạc](color) [cao cấp](category) không?
+    - Có [máy làm tỏi đen](product) màu [bạc](color) [cao cấp](category) không?
+    - Tìm [bình phun sương](product) [xanh](color) [rẻ](price)
+    - Tìm [bình phun sương](product) màu [xanh](color) [rẻ](price)
+    - Tôi cần [ghế gấp](product) [nâu](color) [dưới 500k](price)
+    - Tôi cần [ghế gấp](product) màu [nâu](color) [dưới 500k](price)
+    - Có [máy xay đa năng](product) [trắng](color) [Panasonic](brand) không?
+    - Có [máy xay đa năng](product) màu [trắng](color) [Panasonic](brand) không?
+    - Tìm [đèn treo](product) [vàng](color) [thời trang](category)
+    - Tìm [đèn treo](product) màu [vàng](color) [thời trang](category)
+    - Tôi muốn mua [chén sứ](product) [trắng](color) [rẻ](price)
+    - Tôi muốn mua [chén sứ](product) màu [trắng](color) [rẻ](price)
+    - Có [máy hút mùi](product) [bạc](color) [dưới 5 triệu](price) không?
+    - Có [máy hút mùi](product) màu [bạc](color) [dưới 5 triệu](price) không?
+    - Tìm [bàn chải điện](product) [hồng](color) [Oral-B](brand)
+    - Tìm [bàn chải điện](product) màu [hồng](color) [Oral-B](brand)
+    - Tôi cần [tủ đựng đồ](product) [xám](color) [nhỏ gọn](category)
+    - Tôi cần [tủ đựng đồ](product) màu [xám](color) [nhỏ gọn](category)
+    - Có [máy làm mát](product) [trắng](color) [rẻ](price) không?
+    - Có [máy làm mát](product) màu [trắng](color) [rẻ](price) không?
+    - Tìm [bỉm](product) [trắng](color) [Huggies](brand)
+    - Tìm [bỉm](product) màu [trắng](color) [Huggies](brand)
+    - Tôi muốn mua [sữa bột](product) [vàng](color) [dưới 500k](price)
+    - Tôi muốn mua [sữa bột](product) màu [vàng](color) [dưới 500k](price)
+    - Có [xe đẩy](product) [xanh](color) [nhỏ gọn](category) không?
+    - Có [xe đẩy](product) màu [xanh](color) [nhỏ gọn](category) không?
+    - Tìm [quần áo sơ sinh](product) [hồng](color) [size 0-3 tháng](size)
+    - Tìm [quần áo sơ sinh](product) màu [hồng](color) [size 0-3 tháng](size)
+    - Tôi cần [ghế ăn](product) [trắng](color) [rẻ](price)
+    - Tôi cần [ghế ăn](product) màu [trắng](color) [rẻ](price)
+    - Có [bình sữa](product) [xanh dương](color) [Pigeon](brand) không?
+    - Có [bình sữa](product) màu [xanh dương](color) [Pigeon](brand) không?
+    - Tìm [tã lót](product) [trắng](color) [dưới 200k](price)
+    - Tìm [tã lót](product) màu [trắng](color) [dưới 200k](price)
+    - Tôi muốn mua [nôi](product) [nâu](color) [đa năng](category)
+    - Tôi muốn mua [nôi](product) màu [nâu](color) [đa năng](category)
+    - Có [đồ chơi xếp hình](product) [đỏ](color) [trẻ em](category) không?
+    - Có [đồ chơi xếp hình](product) màu [đỏ](color) [trẻ em](category) không?
+    - Tìm [yếm](product) [hồng](color) [rẻ](price)
+    - Tìm [yếm](product) màu [hồng](color) [rẻ](price)
+    - Tôi cần [máy hâm sữa](product) [trắng](color) [Philips Avent](brand)
+    - Tôi cần [máy hâm sữa](product) màu [trắng](color) [Philips Avent](brand)
+    - Có [ghế rung](product) [xanh lá](color) [dưới 1 triệu](price) không?
+    - Có [ghế rung](product) màu [xanh lá](color) [dưới 1 triệu](price) không?
+    - Tìm [kính bơi trẻ em](product) [đen](color) [thể thao](category)
+    - Tìm [kính bơi trẻ em](product) màu [đen](color) [thể thao](category)
+    - Tôi muốn mua [khăn tắm](product) [trắng](color) [cotton](category)
+    - Tôi muốn mua [khăn tắm](product) màu [trắng](color) [cotton](category)
+    - Có [mũ cho bé](product) [hồng](color) [rẻ](price) không?
+    - Có [mũ cho bé](product) màu [hồng](color) [rẻ](price) không?
+    - Tìm [sữa tắm trẻ em](product) [xanh](color) [Johnson’s](brand)
+    - Tìm [sữa tắm trẻ em](product) màu [xanh](color) [Johnson’s](brand)
+    - Tôi cần [địu](product) [xám](color) [thoáng khí](category)
+    - Tôi cần [địu](product) màu [xám](color) [thoáng khí](category)
+    - Có [máy tiệt trùng](product) [trắng](color) [dưới 2 triệu](price) không?
+    - Có [máy tiệt trùng](product) màu [trắng](color) [dưới 2 triệu](price) không?
+    - Tìm [đồ chơi phát nhạc](product) [đỏ](color) [trẻ sơ sinh](category)
+    - Tìm [đồ chơi phát nhạc](product) màu [đỏ](color) [trẻ sơ sinh](category)
+    - Tôi muốn mua [chăn](product) [hồng phấn](color) [rẻ](price)
+    - Tôi muốn mua [chăn](product) màu [hồng phấn](color) [rẻ](price)
+    - Có [tấm lót sơ sinh](product) [trắng](color) [giảm giá](price) không?
+    - Có [tấm lót sơ sinh](product) màu [trắng](color) [giảm giá](price) không?
+    - Tìm [ghế tập ngồi](product) [xanh dương](color) [nhỏ gọn](category)
+    - Tìm [ghế tập ngồi](product) màu [xanh dương](color) [nhỏ gọn](category)
+    - Tôi cần [bột ăn dặm](product) [vàng](color) [Nestlé](brand)
+    - Tôi cần [bột ăn dặm](product) màu [vàng](color) [Nestlé](brand)
+    - Có [xe tập đi](product) [đỏ](color) [dưới 700k](price) không?
+    - Có [xe tập đi](product) màu [đỏ](color) [dưới 700k](price) không?
+    - Tìm [túi đựng bỉm](product) [xám](color) [rẻ](price)
+    - Tìm [túi đựng bỉm](product) màu [xám](color) [rẻ](price)
+    - Tôi muốn mua [đồ bơi trẻ em](product) [hồng](color) [size 2-3 tuổi](size)
+    - Tôi muốn mua [đồ bơi trẻ em](product) màu [hồng](color) [size 2-3 tuổi](size)
+    - Có [phấn rôm](product) [trắng](color) [Pigeon](brand) không?
+    - Có [phấn rôm](product) màu [trắng](color) [Pigeon](brand) không?
+    - Tìm [máy báo khóc](product) [trắng](color) [dưới 1 triệu](price)
+    - Tìm [máy báo khóc](product) màu [trắng](color) [dưới 1 triệu](price)
+    - Tôi cần [gối chống trào ngược](product) [beige](color) [trẻ sơ sinh](category)
+    - Tôi cần [gối chống trào ngược](product) màu [beige](color) [trẻ sơ sinh](category)
+    - Có [tất chân bé](product) [đen](color) [size 0-6 tháng](size) không?
+    - Có [tất chân bé](product) màu [đen](color) [size 0-6 tháng](size) không?
+    - Tìm [bộ đồ chơi xếp gỗ](product) [đa màu](color) [trẻ em](category)
+    - Tìm [bộ đồ chơi xếp gỗ](product) màu [đa màu](color) [trẻ em](category)
+    - Tôi muốn mua [máy xay thức ăn](product) [xanh](color) [rẻ](price)
+    - Tôi muốn mua [máy xay thức ăn](product) màu [xanh](color) [rẻ](price)
+    - Có [bình nước cho bé](product) [hồng](color) [dưới 300k](price) không?
+    - Có [bình nước cho bé](product) màu [hồng](color) [dưới 300k](price) không?
+    - Tìm [đồ chơi xúc xắc](product) [đỏ](color) [trẻ sơ sinh](category)
+    - Tìm [đồ chơi xúc xắc](product) màu [đỏ](color) [trẻ sơ sinh](category)
+    - Tôi cần [khăn ướt](product) [trắng](color) [Bobby](brand)
+    - Tôi cần [khăn ướt](product) màu [trắng](color) [Bobby](brand)
+    - Có [đai tập đi](product) [xanh lá](color) [rẻ](price) không?
+    - Có [đai tập đi](product) màu [xanh lá](color) [rẻ](price) không?
+    - Tìm [bộ quần áo bé gái](product) [hồng](color) [size 1-2 tuổi](size)
+    - Tìm [bộ quần áo bé gái](product) màu [hồng](color) [size 1-2 tuổi](size)
+    - Tôi muốn mua [máy hút mũi](product) [trắng](color) [dưới 400k](price)
+    - Tôi muốn mua [máy hút mũi](product) màu [trắng](color) [dưới 400k](price)
+    - Có [gối ôm](product) [beige](color) [trẻ em](category) không?
+    - Có [gối ôm](product) màu [beige](color) [trẻ em](category) không?
+    - Tìm [sữa rửa mặt bé](product) [xanh](color) [giảm giá](price)
+    - Tìm [sữa rửa mặt bé](product) màu [xanh](color) [giảm giá](price)
+    - Tôi cần [thảm chơi](product) [đa màu](color) [trẻ sơ sinh](category)
+    - Tôi cần [thảm chơi](product) màu [đa màu](color) [trẻ sơ sinh](category)
+    - Có [bô vệ sinh](product) [hồng](color) [rẻ](price) không?
+    - Có [bô vệ sinh](product) màu [hồng](color) [rẻ](price) không?
+    - Tìm [đồ chơi lắp ghép](product) [xanh dương](color) [trẻ em](category)
+    - Tìm [đồ chơi lắp ghép](product) màu [xanh dương](color) [trẻ em](category)
+    - Tôi muốn mua [nệm cho bé](product) [trắng](color) [dưới 600k](price)
+    - Tôi muốn mua [nệm cho bé](product) màu [trắng](color) [dưới 600k](price)
+    - Có [máy đo nhiệt độ](product) [xanh](color) [Omron](brand) không?
+    - Có [máy đo nhiệt độ](product) màu [xanh](color) [Omron](brand) không?
+    - Tìm [bình tập uống](product) [hồng](color) [rẻ](price)
+    - Tìm [bình tập uống](product) màu [hồng](color) [rẻ](price)
+    - Tôi cần [đồ chơi gặm nướu](product) [đỏ](color) [trẻ sơ sinh](category)
+    - Tôi cần [đồ chơi gặm nướu](product) màu [đỏ](color) [trẻ sơ sinh](category)
+    - Có [túi giữ nhiệt sữa](product) [xám](color) [dưới 500k](price) không?
+    - Có [túi giữ nhiệt sữa](product) màu [xám](color) [dưới 500k](price) không?
+    - Tìm [nước rửa chén](product) [xanh](color) [Sunlight](brand)
+    - Tìm [nước rửa chén](product) màu [xanh](color) [Sunlight](brand)
+    - Tôi muốn mua [xà phòng](product) [trắng](color) [dưới 50k](price)
+    - Tôi muốn mua [xà phòng](product) màu [trắng](color) [dưới 50k](price)
+    - Có [nước giặt](product) [hồng](color) [rẻ](price) không?
+    - Có [nước giặt](product) màu [hồng](color) [rẻ](price) không?
+    - Tìm [bột giặt](product) [xanh dương](color) [Omo](brand)
+    - Tìm [bột giặt](product) màu [xanh dương](color) [Omo](brand)
+    - Tôi cần [nước lau sàn](product) [xanh lá](color) [thơm lâu](category)
+    - Tôi cần [nước lau sàn](product) màu [xanh lá](color) [thơm lâu](category)
+    - Có [khăn giấy](product) [trắng](color) [dưới 100k](price) không?
+    - Có [khăn giấy](product) màu [trắng](color) [dưới 100k](price) không?
+    - Tìm [túi rác](product) [đen](color) [rẻ](price)
+    - Tìm [túi rác](product) màu [đen](color) [rẻ](price)
+    - Tôi muốn mua [nước tẩy rửa](product) [xanh](color) [Cif](brand)
+    - Tôi muốn mua [nước tẩy rửa](product) màu [xanh](color) [Cif](brand)
+    - Có [chất tẩy rửa bồn cầu](product) [xanh dương](color) [dưới 200k](price) không?
+    - Có [chất tẩy rửa bồn cầu](product) màu [xanh dương](color) [dưới 200k](price) không?
+    - Tìm [bàn chải đánh răng](product) [hồng](color) [Colgate](brand)
+    - Tìm [bàn chải đánh răng](product) màu [hồng](color) [Colgate](brand)
+    - Tôi cần [kem đánh răng](product) [trắng](color) [rẻ](price)
+    - Tôi cần [kem đánh răng](product) màu [trắng](color) [rẻ](price)
+    - Có [dầu ăn](product) [vàng](color) [Tường An](brand) không?
+    - Có [dầu ăn](product) màu [vàng](color) [Tường An](brand) không?
+    - Tìm [muối](product) [trắng](color) [dưới 20k](price)
+    - Tìm [muối](product) màu [trắng](color) [dưới 20k](price)
+    - Tôi muốn mua [đường](product) [trắng](color) [rẻ](price)
+    - Tôi muốn mua [đường](product) màu [trắng](color) [rẻ](price)
+    - Có [nước mắm](product) [nâu](color) [Phú Quốc](brand) không?
+    - Có [nước mắm](product) màu [nâu](color) [Phú Quốc](brand) không?
+    - Tìm [bột ngọt](product) [trắng](color) [dưới 50k](price)
+    - Tìm [bột ngọt](product) màu [trắng](color) [dưới 50k](price)
+    - Tôi cần [nước tương](product) [đen](color) [Maggi](brand)
+    - Tôi cần [nước tương](product) màu [đen](color) [Maggi](brand)
+    - Có [hạt nêm](product) [vàng](color) [rẻ](price) không?
+    - Có [hạt nêm](product) màu [vàng](color) [rẻ](price) không?
+    - Tìm [dầu hào](product) [nâu](color) [Lee Kum Kee](brand)
+    - Tìm [dầu hào](product) màu [nâu](color) [Lee Kum Kee](brand)
+    - Tôi muốn mua [bột canh](product) [trắng](color) [dưới 30k](price)
+    - Tôi muốn mua [bột canh](product) màu [trắng](color) [dưới 30k](price)
+    - Có [khăn lau đa năng](product) [xanh](color) [rẻ](price) không?
+    - Có [khăn lau đa năng](product) màu [xanh](color) [rẻ](price) không?
+    - Tìm [nước xả vải](product) [hồng](color) [Comfort](brand)
+    - Tìm [nước xả vải](product) màu [hồng](color) [Comfort](brand)
+    - Tôi cần [chất khử mùi](product) [xanh dương](color) [dưới 100k](price)
+    - Tôi cần [chất khử mùi](product) màu [xanh dương](color) [dưới 100k](price)
+    - Có [băng vệ sinh](product) [trắng](color) [Kotex](brand) không?
+    - Có [băng vệ sinh](product) màu [trắng](color) [Kotex](brand) không?
+    - Tìm [giấy vệ sinh](product) [trắng](color) [rẻ](price)
+    - Tìm [giấy vệ sinh](product) màu [trắng](color) [rẻ](price)
+    - Tôi muốn mua [băng keo](product) [trắng](color) [dưới 50k](price)
+    - Tôi muốn mua [băng keo](product) màu [trắng](color) [dưới 50k](price)
+    - Có [bao tay cao su](product) [hồng](color) [size M](size) không?
+    - Có [bao tay cao su](product) màu [hồng](color) [size M](size) không?
+    - Tìm [chổi quét bụi](product) [xanh](color) [rẻ](price)
+    - Tìm [chổi quét bụi](product) màu [xanh](color) [rẻ](price)
+    - Tôi cần [hộp đựng thực phẩm](product) [trắng](color) [Lock&Lock](brand)
+    - Tôi cần [hộp đựng thực phẩm](product) màu [trắng](color) [Lock&Lock](brand)
+    - Có [chai xịt kính](product) [xanh dương](color) [dưới 70k](price) không?
+    - Có [chai xịt kính](product) màu [xanh dương](color) [dưới 70k](price) không?
+    - Tìm [miếng rửa chén](product) [xanh lá](color) [rẻ](price)
+    - Tìm [miếng rửa chén](product) màu [xanh lá](color) [rẻ](price)
+    - Tôi muốn mua [nến thơm](product) [trắng](color) [dưới 200k](price)
+    - Tôi muốn mua [nến thơm](product) màu [trắng](color) [dưới 200k](price)
+    - Có [bao đựng rác](product) [đen](color) [size lớn](size) không?
+    - Có [bao đựng rác](product) màu [đen](color) [size lớn](size) không?
+    - Tìm [chai đựng nước rửa tay](product) [hồng](color) [rẻ](price)
+    - Tìm [chai đựng nước rửa tay](product) màu [hồng](color) [rẻ](price)
+    - Tôi cần [bình xịt côn trùng](product) [xanh](color) [Raid](brand)
+    - Tôi cần [bình xịt côn trùng](product) màu [xanh](color) [Raid](brand)
+    - Có [khăn lau bếp](product) [trắng](color) [dưới 50k](price) không?
+    - Có [khăn lau bếp](product) màu [trắng](color) [dưới 50k](price) không?
+    - Tìm [nước rửa tay](product) [xanh lá](color) [Lifebuoy](brand)
+    - Tìm [nước rửa tay](product) màu [xanh lá](color) [Lifebuoy](brand)
+    - Tôi muốn mua [dung dịch vệ sinh](product) [hồng](color) [dưới 100k](price)
+    - Tôi muốn mua [dung dịch vệ sinh](product) màu [hồng](color) [dưới 100k](price)
+    - Có [hộp đựng gia vị](product) [trắng](color) [rẻ](price) không?
+    - Có [hộp đựng gia vị](product) màu [trắng](color) [rẻ](price) không?
+    - Tìm [chai lăn khử mùi](product) [xanh dương](color) [Rexona](brand)
+    - Tìm [chai lăn khử mùi](product) màu [xanh dương](color) [Rexona](brand)
+    - Tôi cần [bột tẩy trắng](product) [trắng](color) [dưới 80k](price)
+    - Tôi cần [bột tẩy trắng](product) màu [trắng](color) [dưới 80k](price)
+    - Có [hũ đựng đồ khô](product) [trắng](color) [giảm giá](price) không?
+    - Có [hũ đựng đồ khô](product) màu [trắng](color) [giảm giá](price) không?
+    - Tìm [xô đựng nước](product) [xanh](color) [rẻ](price)
+    - Tìm [xô đựng nước](product) màu [xanh](color) [rẻ](price)
+    - Tôi muốn mua [chất diệt khuẩn](product) [xanh dương](color) [Dettol](brand)
+    - Tôi muốn mua [chất diệt khuẩn](product) màu [xanh dương](color) [Dettol](brand)
+    - Có [băng cá nhân](product) [beige](color) [dưới 50k](price) không?
+    - Có [băng cá nhân](product) màu [beige](color) [dưới 50k](price) không?
+    - Tìm [khăn lau tay](product) [trắng](color) [cotton](category)
+    - Tìm [khăn lau tay](product) màu [trắng](color) [cotton](category)
+    - Tôi cần [chai đựng xà phòng](product) [hồng](color) [rẻ](price)
+    - Tôi cần [chai đựng xà phòng](product) màu [hồng](color) [rẻ](price)
+    - Có [bột giặt tay](product) [xanh](color) [Ariel](brand) không?
+    - Có [bột giặt tay](product) màu [xanh](color) [Ariel](brand) không?
+    - Tìm [nước rửa kính](product) [xanh dương](color) [dưới 100k](price)
+    - Tìm [nước rửa kính](product) màu [xanh dương](color) [dưới 100k](price)
+    - Tôi muốn mua [túi đựng đồ khô](product) [trắng](color) [rẻ](price)
+    - Tôi muốn mua [túi đựng đồ khô](product) màu [trắng](color) [rẻ](price)
+    - Có [miếng lót giày](product) [đen](color) [size 38](size) không?
+    - Có [miếng lót giày](product) màu [đen](color) [size 38](size) không?
+    - Tìm [xếp hình](product) [đỏ](color) [Lego](brand)
+    - Tìm [xếp hình](product) màu [đỏ](color) [Lego](brand)
+    - Tôi muốn mua [búp bê](product) [hồng](color) [dưới 500k](price)
+    - Tôi muốn mua [búp bê](product) màu [hồng](color) [dưới 500k](price)
+    - Có [xe điều khiển](product) [đen](color) [rẻ](price) không?
+    - Có [xe điều khiển](product) màu [đen](color) [rẻ](price) không?
+    - Tìm [thú bông](product) [trắng](color) [gấu](category)
+    - Tìm [thú bông](product) màu [trắng](color) [gấu](category)
+    - Tôi cần [đồ chơi lắp ghép](product) [xanh](color) [trẻ em](category)
+    - Tôi cần [đồ chơi lắp ghép](product) màu [xanh](color) [trẻ em](category)
+    - Có [ô tô đồ chơi](product) [đỏ](color) [dưới 200k](price) không?
+    - Có [ô tô đồ chơi](product) màu [đỏ](color) [dưới 200k](price) không?
+    - Tìm [bộ cát động lực](product) [vàng](color) [rẻ](price)
+    - Tìm [bộ cát động lực](product) màu [vàng](color) [rẻ](price)
+    - Tôi muốn mua [robot đồ chơi](product) [xám](color) [giảm giá](price)
+    - Tôi muốn mua [robot đồ chơi](product) màu [xám](color) [giảm giá](price)
+    - Có [bộ xếp gỗ](product) [đa màu](color) [trẻ em](category) không?
+    - Có [bộ xếp gỗ](product) màu [đa màu](color) [trẻ em](category) không?
+    - Tìm [súng nước](product) [xanh dương](color) [mùa hè](category)
+    - Tìm [súng nước](product) màu [xanh dương](color) [mùa hè](category)
+    - Tôi cần [bộ thẻ học](product) [trắng](color) [học tập](category)
+    - Tôi cần [bộ thẻ học](product) màu [trắng](color) [học tập](category)
+    - Có [phi thuyền đồ chơi](product) [bạc](color) [rẻ](price) không?
+    - Có [phi thuyền đồ chơi](product) màu [bạc](color) [rẻ](price) không?
+    - Tìm [đồ chơi câu cá](product) [xanh](color) [dưới 300k](price)
+    - Tìm [đồ chơi câu cá](product) màu [xanh](color) [dưới 300k](price)
+    - Tôi muốn mua [bộ đất nặn](product) [đa màu](color) [Play-Doh](brand)
+    - Tôi muốn mua [bộ đất nặn](product) màu [đa màu](color) [Play-Doh](brand)
+    - Có [mô hình siêu nhân](product) [đỏ](color) [giảm giá](price) không?
+    - Có [mô hình siêu nhân](product) màu [đỏ](color) [giảm giá](price) không?
+    - Tìm [bóng bay](product) [hồng](color) [rẻ](price)
+    - Tìm [bóng bay](product) màu [hồng](color) [rẻ](price)
+    - Tôi cần [đồ chơi phát nhạc](product) [trắng](color) [trẻ em](category)
+    - Tôi cần [đồ chơi phát nhạc](product) màu [trắng](color) [trẻ em](category)
+    - Có [xe trượt scooter](product) [xanh lá](color) [dưới 700k](price) không?
+    - Có [xe trượt scooter](product) màu [xanh lá](color) [dưới 700k](price) không?
+    - Tìm [bộ nấu ăn đồ chơi](product) [hồng](color) [trẻ em](category)
+    - Tìm [bộ nấu ăn đồ chơi](product) màu [hồng](color) [trẻ em](category)
+    - Tôi muốn mua [mô hình xe hơi](product) [đen](color) [Hot Wheels](brand)
+    - Tôi muốn mua [mô hình xe hơi](product) màu [đen](color) [Hot Wheels](brand)
+    - Có [đồ chơi xúc xắc](product) [đỏ](color) [trẻ sơ sinh](category) không?
+    - Có [đồ chơi xúc xắc](product) màu [đỏ](color) [trẻ sơ sinh](category) không?
+    - Tìm [bộ xếp hình nam châm](product) [xanh](color) [giảm giá](price)
+    - Tìm [bộ xếp hình nam châm](product) màu [xanh](color) [giảm giá](price)
+    - Tôi cần [đồ chơi nhà bếp](product) [trắng](color) [trẻ em](category)
+    - Tôi cần [đồ chơi nhà bếp](product) màu [trắng](color) [trẻ em](category)
+    - Có [trò chơi ghép hình](product) [đa màu](color) [rẻ](price) không?
+    - Có [trò chơi ghép hình](product) màu [đa màu](color) [rẻ](price) không?
+    - Tìm [đồ chơi bác sĩ](product) [xanh dương](color) [trẻ em](category)
+    - Tìm [đồ chơi bác sĩ](product) màu [xanh dương](color) [trẻ em](category)
+    - Tôi muốn mua [bộ xe lửa](product) [đen](color) [dưới 500k](price)
+    - Tôi muốn mua [bộ xe lửa](product) màu [đen](color) [dưới 500k](price)
+    - Có [đồ chơi máy bay](product) [trắng](color) [giảm giá](price) không?
+    - Có [đồ chơi máy bay](product) màu [trắng](color) [giảm giá](price) không?
+    - Tìm [bóng rổ đồ chơi](product) [cam](color) [trẻ em](category)
+    - Tìm [bóng rổ đồ chơi](product) màu [cam](color) [trẻ em](category)
+    - Tôi cần [đồ chơi gấu bông](product) [nâu](color) [rẻ](price)
+    - Tôi cần [đồ chơi gấu bông](product) màu [nâu](color) [rẻ](price)
+    - Có [bộ xếp hình gỗ](product) [đa màu](color) [trẻ em](category) không?
+    - Có [bộ xếp hình gỗ](product) màu [đa màu](color) [trẻ em](category) không?
+    - Tìm [đồ chơi học số](product) [xanh](color) [học tập](category)
+    - Tìm [đồ chơi học số](product) màu [xanh](color) [học tập](category)
+    - Tôi muốn mua [đồ chơi tàu hỏa](product) [đỏ](color) [dưới 400k](price)
+    - Tôi muốn mua [đồ chơi tàu hỏa](product) màu [đỏ](color) [dưới 400k](price)
+    - Có [bộ đồ chơi siêu nhân](product) [xanh dương](color) [giảm giá](price) không?
+    - Có [bộ đồ chơi siêu nhân](product) màu [xanh dương](color) [giảm giá](price) không?
+    - Tìm [đồ chơi nhà búp bê](product) [hồng](color) [trẻ em](category)
+    - Tìm [đồ chơi nhà búp bê](product) màu [hồng](color) [trẻ em](category)
+    - Tôi cần [đồ chơi xe đua](product) [đen](color) [Hot Wheels](brand)
+    - Tôi cần [đồ chơi xe đua](product) màu [đen](color) [Hot Wheels](brand)
+    - Có [bộ đồ chơi học chữ](product) [trắng](color) [học tập](category) không?
+    - Có [bộ đồ chơi học chữ](product) màu [trắng](color) [học tập](category) không?
+    - Tìm [đồ chơi phun nước](product) [xanh lá](color) [mùa hè](category)
+    - Tìm [đồ chơi phun nước](product) màu [xanh lá](color) [mùa hè](category)
+    - Tôi muốn mua [đồ chơi khủng long](product) [xanh](color) [rẻ](price)
+    - Tôi muốn mua [đồ chơi khủng long](product) màu [xanh](color) [rẻ](price)
+    - Có [bóng đồ chơi](product) [đỏ](color) [trẻ em](category) không?
+    - Có [bóng đồ chơi](product) màu [đỏ](color) [trẻ em](category) không?
+    - Tìm [đồ chơi trống](product) [trắng](color) [dưới 300k](price)
+    - Tìm [đồ chơi trống](product) màu [trắng](color) [dưới 300k](price)
+    - Tôi cần [đồ chơi xe cứu hỏa](product) [đỏ](color) [trẻ em](category)
+    - Tôi cần [đồ chơi xe cứu hỏa](product) màu [đỏ](color) [trẻ em](category)
+    - Có [đồ chơi bong bóng](product) [xanh dương](color) [rẻ](price) không?
+    - Có [đồ chơi bong bóng](product) màu [xanh dương](color) [rẻ](price) không?
+    - Tìm [đồ chơi đàn piano](product) [đen](color) [trẻ em](category)
+    - Tìm [đồ chơi đàn piano](product) màu [đen](color) [trẻ em](category)
+    - Tôi muốn mua [đồ chơi xe cảnh sát](product) [trắng](color) [dưới 400k](price)
+    - Tôi muốn mua [đồ chơi xe cảnh sát](product) màu [trắng](color) [dưới 400k](price)
+    - Có [đồ chơi cầu trượt](product) [hồng](color) [trẻ em](category) không?
+    - Có [đồ chơi cầu trượt](product) màu [hồng](color) [trẻ em](category) không?
+    - Tìm [đồ chơi máy xúc](product) [vàng](color) [rẻ](price)
+    - Tìm [đồ chơi máy xúc](product) màu [vàng](color) [rẻ](price)
+    - Tìm [gạo](product) [trắng](color) [ST25](brand)
+    - Tìm [gạo](product) màu [trắng](color) [ST25](brand)
+    - Tôi muốn mua [mì gói](product) [vàng](color) [Hảo Hảo](brand)
+    - Tôi muốn mua [mì gói](product) màu [vàng](color) [Hảo Hảo](brand)
+    - Có [bánh mì](product) [nâu](color) [rẻ](price) không?
+    - Có [bánh mì](product) màu [nâu](color) [rẻ](price) không?
+    - Tìm [nước ngọt](product) [trắng](color) [Pepsi](brand)
+    - Tìm [nước ngọt](product) màu [trắng](color) [Pepsi](brand)
+    - Tôi cần [trà sữa](product) [nâu](color) [dưới 50k](price)
+    - Tôi cần [trà sữa](product) màu [nâu](color) [dưới 50k](price)
+    - Có [kẹo](product) [đỏ](color) [Chupa Chups](brand) không?
+    - Có [kẹo](product) màu [đỏ](color) [Chupa Chups](brand) không?
+    - Tìm [bánh quy](product) [vàng](color) [dưới 100k](price)
+    - Tìm [bánh quy](product) màu [vàng](color) [dưới 100k](price)
+    - Tôi muốn mua [sô cô la](product) [nâu](color) [rẻ](price)
+    - Tôi muốn mua [sô cô la](product) màu [nâu](color) [rẻ](price)
+    - Có [nước uống đóng chai](product) [trắng](color) [Lavie](brand) không?
+    - Có [nước uống đóng chai](product) màu [trắng](color) [Lavie](brand) không?
+    - Tìm [bánh snack](product) [vàng](color) [dưới 50k](price)
+    - Tìm [bánh snack](product) màu [vàng](color) [dưới 50k](price)
+    - Tôi cần [hạt điều](product) [nâu](color) [giảm giá](price)
+    - Tôi cần [hạt điều](product) màu [nâu](color) [giảm giá](price)
+    - Có [mứt](product) [đỏ](color) [rẻ](price) không?
+    - Có [mứt](product) màu [đỏ](color) [rẻ](price) không?
+    - Tìm [trà](product) [xanh](color) [Phúc Long](brand)
+    - Tìm [trà](product) màu [xanh](color) [Phúc Long](brand)
+    - Tôi muốn mua [cà phê](product) [đen](color) [Trung Nguyên](brand)
+    - Tôi muốn mua [cà phê](product) màu [đen](color) [Trung Nguyên](brand)
+    - Có [bánh chưng](product) [xanh](color) [truyền thống](category) không?
+    - Có [bánh chưng](product) màu [xanh](color) [truyền thống](category) không?
+    - Tìm [khoai tây chiên](product) [vàng](color) [Lay’s](brand)
+    - Tìm [khoai tây chiên](product) màu [vàng](color) [Lay’s](brand)
+    - Tôi cần [nước ép](product) [cam](color) [dưới 70k](price)
+    - Tôi cần [nước ép](product) màu [cam](color) [dưới 70k](price)
+    - Có [bánh ngọt](product) [trắng](color) [rẻ](price) không?
+    - Có [bánh ngọt](product) màu [trắng](color) [rẻ](price) không?
+    - Tìm [sữa tươi](product) [trắng](color) [Vinamilk](brand)
+    - Tìm [sữa tươi](product) màu [trắng](color) [Vinamilk](brand)
+    - Tôi muốn mua [bánh trung thu](product) [vàng](color) [dưới 200k](price)
+    - Tôi muốn mua [bánh trung thu](product) màu [vàng](color) [dưới 200k](price)
+    - Có [nước chấm](product) [nâu](color) [Chinsu](brand) không?
+    - Có [nước chấm](product) màu [nâu](color) [Chinsu](brand) không?
+    - Tìm [bánh phồng tôm](product) [vàng](color) [rẻ](price)
+    - Tìm [bánh phồng tôm](product) màu [vàng](color) [rẻ](price)
+    - Tôi cần [hạt dưa](product) [đỏ](color) [dưới 50k](price)
+    - Tôi cần [hạt dưa](product) màu [đỏ](color) [dưới 50k](price)
+    - Có [bánh gạo](product) [trắng](color) [giảm giá](price) không?
+    - Có [bánh gạo](product) màu [trắng](color) [giảm giá](price) không?
+    - Tìm [nước tăng lực](product) [bạc](color) [Red Bull](brand)
+    - Tìm [nước tăng lực](product) màu [bạc](color) [Red Bull](brand)
+    - Tôi muốn mua [bánh donut](product) [nâu](color) [dưới 100k](price)
+    - Tôi muốn mua [bánh donut](product) màu [nâu](color) [dưới 100k](price)
+    - Có [kẹo mút](product) [hồng](color) [rẻ](price) không?
+    - Có [kẹo mút](product) màu [hồng](color) [rẻ](price) không?
+    - Tìm [bánh cupcake](product) [trắng](color) [giảm giá](price)
+    - Tìm [bánh cupcake](product) màu [trắng](color) [giảm giá](price)
+    - Tôi cần [hạt óc chó](product) [nâu](color) [dưới 300k](price)
+    - Tôi cần [hạt óc chó](product) màu [nâu](color) [dưới 300k](price)
+    - Có [sữa chua](product) [trắng](color) [TH True Milk](brand) không?
+    - Có [sữa chua](product) màu [trắng](color) [TH True Milk](brand) không?
+    - Tìm [bánh sandwich](product) [vàng](color) [rẻ](price)
+    - Tìm [bánh sandwich](product) màu [vàng](color) [rẻ](price)
+    - Tôi muốn mua [nước dừa](product) [trắng](color) [dưới 50k](price)
+    - Tôi muốn mua [nước dừa](product) màu [trắng](color) [dưới 50k](price)
+    - Có [bánh bao](product) [trắng](color) [giảm giá](price) không?
+    - Có [bánh bao](product) màu [trắng](color) [giảm giá](price) không?
+    - Tìm [bánh tráng](product) [trắng](color) [rẻ](price)
+    - Tìm [bánh tráng](product) màu [trắng](color) [rẻ](price)
+    - Tôi cần [nước khoáng](product) [trắng](color) [Aquafina](brand)
+    - Tôi cần [nước khoáng](product) màu [trắng](color) [Aquafina](brand)
+    - Có [bánh flan](product) [vàng](color) [dưới 50k](price) không?
+    - Có [bánh flan](product) màu [vàng](color) [dưới 50k](price) không?
+    - Tìm [kẹo dẻo](product) [hồng](color) [rẻ](price)
+    - Tìm [kẹo dẻo](product) màu [hồng](color) [rẻ](price)
+    - Tôi muốn mua [bánh pía](product) [vàng](color) [dưới 200k](price)
+    - Tôi muốn mua [bánh pía](product) màu [vàng](color) [dưới 200k](price)
+    - Có [nước mía](product) [vàng](color) [rẻ](price) không?
+    - Có [nước mía](product) màu [vàng](color) [rẻ](price) không?
+    - Tìm [bánh cuốn](product) [trắng](color) [giảm giá](price)
+    - Tìm [bánh cuốn](product) màu [trắng](color) [giảm giá](price)
+    - Tôi cần [hạt hạnh nhân](product) [nâu](color) [dưới 300k](price)
+    - Tôi cần [hạt hạnh nhân](product) màu [nâu](color) [dưới 300k](price)
+    - Có [bánh khoai](product) [vàng](color) [rẻ](price) không?
+    - Có [bánh khoai](product) màu [vàng](color) [rẻ](price) không?
+    - Tìm [nước trà xanh](product) [xanh](color) [C2](brand)
+    - Tìm [nước trà xanh](product) màu [xanh](color) [C2](brand)
+    - Tôi muốn mua [bánh bèo](product) [trắng](color) [dưới 50k](price)
+    - Tôi muốn mua [bánh bèo](product) màu [trắng](color) [dưới 50k](price)
+    - Có [bánh xèo](product) [vàng](color) [giảm giá](price) không?
+    - Có [bánh xèo](product) màu [vàng](color) [giảm giá](price) không?
+    - Tìm [xe máy](product) [đen](color) [Honda](brand)
+    - Tìm [xe máy](product) màu [đen](color) [Honda](brand)
+    - Tôi muốn mua [xe đạp](product) [xanh](color) [dưới 5 triệu](price)
+    - Tôi muốn mua [xe đạp](product) màu [xanh](color) [dưới 5 triệu](price)
+    - Có [mũ bảo hiểm](product) [trắng](color) [rẻ](price) không?
+    - Có [mũ bảo hiểm](product) màu [trắng](color) [rẻ](price) không?
+    - Tìm [lốp xe](product) [đen](color) [Michelin](brand)
+    - Tìm [lốp xe](product) màu [đen](color) [Michelin](brand)
+    - Tôi cần [bơm xe](product) [xám](color) [dưới 200k](price)
+    - Tôi cần [bơm xe](product) màu [xám](color) [dưới 200k](price)
+    - Có [xe điện](product) [trắng](color) [VinFast](brand) không?
+    - Có [xe điện](product) màu [trắng](color) [VinFast](brand) không?
+    - Tìm [găng tay xe máy](product) [đen](color) [rẻ](price)
+    - Tìm [găng tay xe máy](product) màu [đen](color) [rẻ](price)
+    - Tôi muốn mua [kính xe máy](product) [đen](color) [dưới 300k](price)
+    - Tôi muốn mua [kính xe máy](product) màu [đen](color) [dưới 300k](price)
+    - Có [áo mưa xe máy](product) [xanh dương](color) [rẻ](price) không?
+    - Có [áo mưa xe máy](product) màu [xanh dương](color) [rẻ](price) không?
+    - Tìm [bình xăng dự phòng](product) [đỏ](color) [dưới 500k](price)
+    - Tìm [bình xăng dự phòng](product) màu [đỏ](color) [dưới 500k](price)
+    - Tôi cần [đèn xe máy](product) [trắng](color) [giảm giá](price)
+    - Tôi cần [đèn xe máy](product) màu [trắng](color) [giảm giá](price)
+    - Có [xe scooter](product) [hồng](color) [trẻ em](category) không?
+    - Có [xe scooter](product) màu [hồng](color) [trẻ em](category) không?
+    - Tìm [phụ kiện xe đạp](product) [đen](color) [rẻ](price)
+    - Tìm [phụ kiện xe đạp](product) màu [đen](color) [rẻ](price)
+    - Tôi muốn mua [yên xe](product) [nâu](color) [thoải mái](category)
+    - Tôi muốn mua [yên xe](product) màu [nâu](color) [thoải mái](category)
+    - Có [túi đựng đồ xe máy](product) [xám](color) [dưới 400k](price) không?
+    - Có [túi đựng đồ xe máy](product) màu [xám](color) [dưới 400k](price) không?
+    - Tìm [xe đẩy hàng](product) [đỏ](color) [rẻ](price)
+    - Tìm [xe đẩy hàng](product) màu [đỏ](color) [rẻ](price)
+    - Tôi cần [khóa xe](product) [bạc](color) [dưới 300k](price)
+    - Tôi cần [khóa xe](product) màu [bạc](color) [dưới 300k](price)
+    - Có [gương xe máy](product) [đen](color) [giảm giá](price) không?
+    - Có [gương xe máy](product) màu [đen](color) [giảm giá](price) không?
+    - Tìm [baga xe máy](product) [xám](color) [Honda](brand)
+    - Tìm [baga xe máy](product) màu [xám](color) [Honda](brand)
+    - Tôi muốn mua [xe đạp điện](product) [trắng](color) [dưới 10 triệu](price)
+    - Tôi muốn mua [xe đạp điện](product) màu [trắng](color) [dưới 10 triệu](price)
+    - Có [dầu nhớt xe](product) [vàng](color) [Castrol](brand) không?
+    - Có [dầu nhớt xe](product) màu [vàng](color) [Castrol](brand) không?
+    - Tìm [vỏ xe đạp](product) [đen](color) [rẻ](price)
+    - Tìm [vỏ xe đạp](product) màu [đen](color) [rẻ](price)
+    - Tôi cần [bình nước xe đạp](product) [xanh](color) [dưới 200k](price)
+    - Tôi cần [bình nước xe đạp](product) màu [xanh](color) [dưới 200k](price)
+    - Có [đèn xe đạp](product) [trắng](color) [giảm giá](price) không?
+    - Có [đèn xe đạp](product) màu [trắng](color) [giảm giá](price) không?
+    - Tìm [xe trượt trẻ em](product) [hồng](color) [rẻ](price)
+    - Tìm [xe trượt trẻ em](product) màu [hồng](color) [rẻ](price)
+    - Tôi muốn mua [phanh xe](product) [đen](color) [dưới 500k](price)
+    - Tôi muốn mua [phanh xe](product) màu [đen](color) [dưới 500k](price)
+    - Có [xích xe đạp](product) [bạc](color) [rẻ](price) không?
+    - Có [xích xe đạp](product) màu [bạc](color) [rẻ](price) không?
+    - Tìm [túi treo xe đạp](product) [xanh dương](color) [dưới 300k](price)
+    - Tìm [túi treo xe đạp](product) màu [xanh dương](color) [dưới 300k](price)
+    - Tôi cần [áo phản quang](product) [vàng](color) [thể thao](category)
+    - Tôi cần [áo phản quang](product) màu [vàng](color) [thể thao](category)
+    - Có [bộ dụng cụ sửa xe](product) [đen](color) [rẻ](price) không?
+    - Có [bộ dụng cụ sửa xe](product) màu [đen](color) [rẻ](price) không?
+    - Tìm [xe lăn tay](product) [xám](color) [dưới 5 triệu](price)
+    - Tìm [xe lăn tay](product) màu [xám](color) [dưới 5 triệu](price)
+    - Tôi muốn mua [chuông xe đạp](product) [trắng](color) [dưới 100k](price)
+    - Tôi muốn mua [chuông xe đạp](product) màu [trắng](color) [dưới 100k](price)
+    - Có [giỏ xe đạp](product) [nâu](color) [rẻ](price) không?
+    - Có [giỏ xe đạp](product) màu [nâu](color) [rẻ](price) không?
+    - Tìm [đồng hồ đo tốc độ](product) [đen](color) [giảm giá](price)
+    - Tìm [đồng hồ đo tốc độ](product) màu [đen](color) [giảm giá](price)
+    - Tôi cần [ghế ngồi xe máy](product) [hồng](color) [trẻ em](category)
+    - Tôi cần [ghế ngồi xe máy](product) màu [hồng](color) [trẻ em](category)
+    - Có [bạt phủ xe](product) [xám](color) [dưới 200k](price) không?
+    - Có [bạt phủ xe](product) màu [xám](color) [dưới 200k](price) không?
+    - Tìm [dán chống trầy xe](product) [trắng](color) [rẻ](price)
+    - Tìm [dán chống trầy xe](product) màu [trắng](color) [rẻ](price)
+    - Tôi muốn mua [bộ đèn xe máy](product) [vàng](color) [giảm giá](price)
+    - Tôi muốn mua [bộ đèn xe máy](product) màu [vàng](color) [giảm giá](price)
+    - Có [bàn đạp xe](product) [đen](color) [thể thao](category) không?
+    - Có [bàn đạp xe](product) màu [đen](color) [thể thao](category) không?
+    - Tìm [túi đựng điện thoại xe máy](product) [đen](color) [dưới 300k](price)
+    - Tìm [túi đựng điện thoại xe máy](product) màu [đen](color) [dưới 300k](price)
+    - Tôi cần [khóa chống trộm xe](product) [bạc](color) [rẻ](price)
+    - Tôi cần [khóa chống trộm xe](product) màu [bạc](color) [rẻ](price)
+    - Có [găng tay đua xe](product) [đỏ](color) [thể thao](category) không?
+    - Có [găng tay đua xe](product) màu [đỏ](color) [thể thao](category) không?
+    - Tìm [bình xịt lốp](product) [trắng](color) [dưới 400k](price)
+    - Tìm [bình xịt lốp](product) màu [trắng](color) [dưới 400k](price)
+    - Tôi muốn mua [kính bảo hộ xe máy](product) [đen](color) [rẻ](price)
+    - Tôi muốn mua [kính bảo hộ xe máy](product) màu [đen](color) [rẻ](price)
+    - Có [đèn hậu xe](product) [đỏ](color) [giảm giá](price) không?
+    - Có [đèn hậu xe](product) màu [đỏ](color) [giảm giá](price) không?
+    - Tìm [thức ăn chó](product) [nâu](color) [Royal Canin](brand)
+    - Tìm [thức ăn chó](product) màu [nâu](color) [Royal Canin](brand)
+    - Tôi muốn mua [thức ăn mèo](product) [vàng](color) [Whiskas](brand)
+    - Tôi muốn mua [thức ăn mèo](product) màu [vàng](color) [Whiskas](brand)
+    - Có [chuồng chó](product) [xám](color) [dưới 1 triệu](price) không?
+    - Có [chuồng chó](product) màu [xám](color) [dưới 1 triệu](price) không?
+    - Tìm [dây dắt](product) [đen](color) [rẻ](price)
+    - Tìm [dây dắt](product) màu [đen](color) [rẻ](price)
+    - Tôi cần [bát ăn](product) [trắng](color) [thú cưng](category)
+    - Tôi cần [bát ăn](product) màu [trắng](color) [thú cưng](category)
+    - Có [cát vệ sinh](product) [xanh](color) [dưới 200k](price) không?
+    - Có [cát vệ sinh](product) màu [xanh](color) [dưới 200k](price) không?
+    - Tìm [đồ chơi cho mèo](product) [hồng](color) [rẻ](price)
+    - Tìm [đồ chơi cho mèo](product) màu [hồng](color) [rẻ](price)
+    - Tôi muốn mua [chuồng mèo](product) [trắng](color) [giảm giá](price)
+    - Tôi muốn mua [chuồng mèo](product) màu [trắng](color) [giảm giá](price)
+    - Có [thảm cào móng](product) [nâu](color) [thú cưng](category) không?
+    - Có [thảm cào móng](product) màu [nâu](color) [thú cưng](category) không?
+    - Tìm [sữa tắm thú cưng](product) [xanh dương](color) [rẻ](price)
+    - Tìm [sữa tắm thú cưng](product) màu [xanh dương](color) [rẻ](price)
+    - Tôi cần [khay vệ sinh](product) [xám](color) [dưới 300k](price)
+    - Tôi cần [khay vệ sinh](product) màu [xám](color) [dưới 300k](price)
+    - Có [đồ chơi cho chó](product) [đỏ](color) [giảm giá](price) không?
+    - Có [đồ chơi cho chó](product) màu [đỏ](color) [giảm giá](price) không?
+    - Tìm [bánh thưởng](product) [vàng](color) [thú cưng](category)
+    - Tìm [bánh thưởng](product) màu [vàng](color) [thú cưng](category)
+    - Tôi muốn mua [vòng cổ](product) [đen](color) [rẻ](price)
+    - Tôi muốn mua [vòng cổ](product) màu [đen](color) [rẻ](price)
+    - Có [nệm cho thú cưng](product) [hồng](color) [dưới 500k](price) không?
+    - Có [nệm cho thú cưng](product) màu [hồng](color) [dưới 500k](price) không?
+    - Tìm [lồng vận chuyển](product) [xanh](color) [nhỏ gọn](category)
+    - Tìm [lồng vận chuyển](product) màu [xanh](color) [nhỏ gọn](category)
+    - Tôi cần [dầu gội cho chó](product) [trắng](color) [rẻ](price)
+    - Tôi cần [dầu gội cho chó](product) màu [trắng](color) [rẻ](price)
+    - Có [túi đựng phân](product) [đen](color) [dưới 100k](price) không?
+    - Có [túi đựng phân](product) màu [đen](color) [dưới 100k](price) không?
+    - Tìm [bình nước cho thú cưng](product) [xanh dương](color) [rẻ](price)
+    - Tìm [bình nước cho thú cưng](product) màu [xanh dương](color) [rẻ](price)
+    - Tôi muốn mua [thức ăn khô](product) [nâu](color) [Pedigree](brand)
+    - Tôi muốn mua [thức ăn khô](product) màu [nâu](color) [Pedigree](brand)
+    - Có [ghế ngồi cho thú cưng](product) [xám](color) [dưới 700k](price) không?
+    - Có [ghế ngồi cho thú cưng](product) màu [xám](color) [dưới 700k](price) không?
+    - Tìm [đồ chơi gặm](product) [đỏ](color) [thú cưng](category)
+    - Tìm [đồ chơi gặm](product) màu [đỏ](color) [thú cưng](category)
+    - Tôi cần [chổi chải lông](product) [trắng](color) [rẻ](price)
+    - Tôi cần [chổi chải lông](product) màu [trắng](color) [rẻ](price)
+    - Có [thức ăn ướt](product) [vàng](color) [Me-O](brand) không?
+    - Có [thức ăn ướt](product) màu [vàng](color) [Me-O](brand) không?
+    - Tìm [tấm lót vệ sinh](product) [trắng](color) [dưới 200k](price)
+    - Tìm [tấm lót vệ sinh](product) màu [trắng](color) [dưới 200k](price)
+    - Tôi muốn mua [đồ chơi dây thừng](product) [xanh](color) [thú cưng](category)
+    - Tôi muốn mua [đồ chơi dây thừng](product) màu [xanh](color) [thú cưng](category)
+    - Có [balo cho thú cưng](product) [hồng](color) [rẻ](price) không?
+    - Có [balo cho thú cưng](product) màu [hồng](color) [rẻ](price) không?
+    - Tìm [áo cho chó](product) [đen](color) [size M](size)
+    - Tìm [áo cho chó](product) màu [đen](color) [size M](size)
+    - Tôi cần [bộ dụng cụ cắt móng](product) [xanh dương](color) [rẻ](price)
+    - Tôi cần [bộ dụng cụ cắt móng](product) màu [xanh dương](color) [rẻ](price)
+    - Có [nhà cây cho mèo](product) [nâu](color) [dưới 1 triệu](price) không?
+    - Có [nhà cây cho mèo](product) màu [nâu](color) [dưới 1 triệu](price) không?
+    - Tìm [thức ăn thỏ](product) [xanh](color) [rẻ](price)
+    - Tìm [thức ăn thỏ](product) màu [xanh](color) [rẻ](price)
+    - Tôi muốn mua [chuồng thỏ](product) [trắng](color) [dưới 500k](price)
+    - Tôi muốn mua [chuồng thỏ](product) màu [trắng](color) [dưới 500k](price)
+    - Có [bóng đồ chơi cho mèo](product) [hồng](color) [rẻ](price) không?
+    - Có [bóng đồ chơi cho mèo](product) màu [hồng](color) [rẻ](price) không?
+    - Tìm [dây đeo cổ](product) [đỏ](color) [thú cưng](category)
+    - Tìm [dây đeo cổ](product) màu [đỏ](color) [thú cưng](category)
+    - Tôi cần [khăn lau thú cưng](product) [trắng](color) [dưới 100k](price)
+    - Tôi cần [khăn lau thú cưng](product) màu [trắng](color) [dưới 100k](price)
+    - Có [thức ăn chim](product) [vàng](color) [rẻ](price) không?
+    - Có [thức ăn chim](product) màu [vàng](color) [rẻ](price) không?
+    - Tìm [lồng chim](product) [nâu](color) [dưới 300k](price)
+    - Tìm [lồng chim](product) màu [nâu](color) [dưới 300k](price)
+    - Tôi muốn mua [sữa tắm cho mèo](product) [xanh](color) [giảm giá](price)
+    - Tôi muốn mua [sữa tắm cho mèo](product) màu [xanh](color) [giảm giá](price)
+    - Có [đồ chơi xương](product) [trắng](color) [thú cưng](category) không?
+    - Có [đồ chơi xương](product) màu [trắng](color) [thú cưng](category) không?
+    - Tìm [túi đựng thức ăn](product) [xám](color) [rẻ](price)
+    - Tìm [túi đựng thức ăn](product) màu [xám](color) [rẻ](price)
+    - Tôi cần [bát uống nước](product) [hồng](color) [dưới 200k](price)
+    - Tôi cần [bát uống nước](product) màu [hồng](color) [dưới 200k](price)
+    - Có [đệm nằm](product) [nâu](color) [thú cưng](category) không?
+    - Có [đệm nằm](product) màu [nâu](color) [thú cưng](category) không?
+    - Tìm [thức ăn cá](product) [đỏ](color) [rẻ](price)
+    - Tìm [thức ăn cá](product) màu [đỏ](color) [rẻ](price)
+    - Tôi muốn mua [bể cá mini](product) [trắng](color) [dưới 500k](price)
+    - Tôi muốn mua [bể cá mini](product) màu [trắng](color) [dưới 500k](price)
+    - Có [đồ chơi đuôi chuột](product) [xanh](color) [thú cưng](category) không?
+    - Có [đồ chơi đuôi chuột](product) màu [xanh](color) [thú cưng](category) không?
+    - Tìm [dây xích](product) [đen](color) [size L](size)
+    - Tìm [dây xích](product) màu [đen](color) [size L](size)
+    - Có [tivi](product) không?
+    - Có [giày cao gót](product) không?
+    - Có bán [tivi](product) không?
+    - Có bán [quần](product) không?
+    - Có [váy](product) không?
+    - Có bán [áo thun](product) không?
+    - Có [túi xách](product) không?
+    - Có bán [đồng hồ](product) không?
+    - Có [son môi](product) không?
+    - Có bán [kem dưỡng](product) không?
+    - Có [tai nghe](product) không?
+    - Có bán [điện thoại](product) không?
+    - Có [nồi chiên không dầu](product) không?
+    - Có bán [máy xay sinh tố](product) không?
+    - Có [bỉm](product) không?
+    - Có bán [sữa bột](product) không?
+    - Có [nước rửa chén](product) không?
+    - Có bán [xà phòng](product) không?
+    - Có [xếp hình](product) không?
+    - Có bán [búp bê](product) không?
+    - Có [gạo](product) không?
+    - Có bán [mì gói](product) không?
+    - Có [xe máy](product) không?
+    - Có bán [xe đạp](product) không?
+    - Có [thức ăn chó](product) không?
+    - Có bán [thức ăn mèo](product) không?
+    - Tôi muốn mua [1](quantity) cái [áo](product)
+    - Tôi muốn mua [2](quantity) [áo](product) [đen](color)
+    - Tôi muốn mua [3](quantity) [áo](product) [trắng](color)
+    - Tôi muốn mua [1](quantity) [áo](product) màu [đen](color)
+    - Tôi muốn mua [4](quantity) [áo](product) màu [trắng](color)
+    - Tôi muốn mua [5](quantity) [quần](product)
+    - Tôi muốn mua [1](quantity) [quần](product) [xanh](color)
+    - Tôi muốn mua [1](quantity) [quần](product) [đen](color)
+    - Tôi muốn mua [1](quantity) [quần](product) màu [xanh](color)
+    - Tôi muốn mua [1](quantity) [quần](product) màu [đen](color)
+    - Tôi muốn mua [2](quantity) [tivi](product)
+    - Tôi muốn mua [2](quantity) [tivi](product) [đen](color)
+    - Tôi muốn mua [3](quantity) [tivi](product) [trắng](color)
+    - Tôi muốn mua [3](quantity) [tivi](product) màu [đen](color)
+    - Tôi muốn mua [4](quantity) [tivi](product) màu [trắng](color)
+    - Tôi muốn mua [2](quantity) [máy tính](product)
+    - Tôi muốn mua [12](quantity) [máy tính](product) [xám](color)
+    - Tôi muốn mua [10](quantity) [máy tính](product) [đen](color)
+    - Tôi muốn mua [2](quantity) [máy tính](product) màu [xám](color)
+    - Tôi muốn mua [2](quantity) [máy tính](product) màu [đen](color)
+    - Tôi muốn mua [3](quantity) [giày](product)
+    - Tôi muốn mua [1](quantity) [giày](product) [nâu](color)
+    - Tôi muốn mua [2](quantity) [giày](product) màu [nâu](color)
+    - Tôi muốn mua [41](quantity) [điện thoại](product)
+    - Tôi muốn mua [1](quantity) [điện thoại](product) [vàng](color)
+    - Tôi muốn mua [1](quantity) [điện thoại](product) màu [vàng](color)

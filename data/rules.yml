@@ -1,0 +1,29 @@
+version: "3.1"
+
+rules:
+
+- rule: Trả lời thông tin công ty NINA
+  steps:
+  - intent: ask_nina
+  - action: utter_nina
+
+- rule: Luôn chào tạm biệt người dùng chào
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Search product
+  steps:
+  - intent: search_product
+  - action: action_reset_search_slots
+  - action: action_search_product
+
+- rule: Trả lời khi không hiểu ý định khách hàng
+  steps:
+      - intent: nlu_fallback
+      - action: utter_default
+
+- rule: Luôn trả lời thời gian khi người dùng hỏi
+  steps:
+    - intent: ask_time
+    - action: action_get_time

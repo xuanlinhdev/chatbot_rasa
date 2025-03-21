@@ -1,0 +1,170 @@
+version: "3.1"
+
+stories:
+
+- story: Greet 
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:  
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: user_deny
+  - action: utter_goodbye
+
+- story: Say deny
+  steps:
+  - intent: user_deny
+  - action: utter_user_deny
+
+- story: Say great
+  steps:
+  - intent: mood_great
+  - action: utter_happy
+
+- story: say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: fallback
+  steps:
+  - action: utter_default
+
+- story: thank you
+  steps:
+  - intent: thank_you
+  - action: utter_nothing
+  - action: utter_nextwork
+
+- story: goodnight
+  steps:
+  - intent: goodnight
+  - action: utter_thanks
+  - action: utter_goodnight
+
+- story: ask author
+  steps:
+  - intent: ask_author
+  - action: utter_author
+
+- story: help
+  steps:
+  - intent: help
+  - action: utter_reply_help
+
+- story: suprise
+  steps:
+  - intent: suprise
+  - action: utter_suprise
+
+- story: ask love
+  steps:
+  - intent: ask_love
+  - action: utter_reply_love
+
+- story: ask_information path
+  steps:
+  - intent: how_old
+  - action: utter_how_old
+  - intent: gender
+  - action: utter_gender
+  - intent: address
+  - action: utter_address
+
+- story: how old
+  steps:
+  - intent: how_old
+  - action: utter_how_old
+
+- story: gender
+  steps:
+  - intent: gender
+  - action: utter_gender
+
+- story: address
+  steps:
+  - intent: address
+  - action: utter_address
+
+- story: how are u
+  steps:
+  - intent: how_are_u
+  - action: utter_how_are_u
+
+- story: sing poem
+  steps:
+  - intent: sing_poem
+  - action: utter_sing_poem
+
+- story: comedy_story
+  steps:
+  - intent: comedy_story
+  - action: utter_comedy_story
+
+- story: affirm
+  steps:
+  - intent: affirm
+  - action: utter_nextwork
+
+- story: scold
+  steps:
+  - intent: scold
+  - action: utter_scold
+  - action: utter_hurt
+
+- story: ask relationship
+  steps:
+  - intent: ask_relationship
+  - action: utter_reply_relationship
+
+- story: introduce 
+  steps:
+  - intent: introduce
+  - action: utter_bot
+  - action: utter_can_do
+
+- story: ask want by producy
+  steps:
+  - intent: want_buy
+  - action: utter_want_buy
+  - intent: enter_name_product
+  - action: action_reset_search_slots
+  - action: action_search_product
+
+
+- story: Greet and Search product
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: search_product
+  - action: action_reset_search_slots
+  - action: action_search_product
+
+
+- story: Handle out of scope
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
